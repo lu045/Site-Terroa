@@ -1,11 +1,13 @@
 .nempreendimentos
 
+	margin-top: 15px
+
 	h1
 		font-family: Raleway
 		text-transform: uppercase
 		color: $marrom
 		text-align: center
-		font-size: 40px
+		font-size: 30px
 
 
 
@@ -35,11 +37,24 @@
 				position: relative
 				+transition(.5s)
 				
-
-
-
 				&:hover
 					transform: scale(1.1)
+
+				.filtro
+					background-color: rgba(0,0,0,0.3)
+					position: absolute
+					width: 350px
+					height: 245px
+					+transition(.5s)
+
+					&:hover
+						background-color: rgba(0,0,0,0.6)
+
+					
+
+					img
+						position: relative
+
 
 
 
@@ -95,6 +110,20 @@
 
 	h2
 		font-size: 18px
+
+
+.home-p
+	width: 186px
+	height: 35px
+	border-radius: 5px
+	margin-top: 10px
+	margin-left: 88px
+	align-items: center
+	justify-content: center
+	position: absolute
+
+	h2
+		font-size: 20px
 
 
 
