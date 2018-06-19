@@ -1,0 +1,77 @@
+header
+ +clearfix
+ +flexbox
+ flex-wrap: wrap 
+ flex-direction: row
+ justify-content: flex-start
+ align-items: flex-start
+ background-color: rgba(238,238,238,.8)
+ box-sizing: border-box
+ box-shadow: 0 2px 15px rgba(0,0,0,.3) 
+ width: 100%
+ height: 150px
+ position: relative
+
+
+
+ +breakpoint($smartphone-med3)
+ 	height: 108px
+
+	.logo
+		float: left
+		width: 255px
+		height: 115px
+		margin: 15px 0 0
+		+breakpoint($tablet)
+			float: none
+
+		+breakpoint($smartphone-med3)
+			width: 194px
+			height: 88px
+			margin: 10px 0 0
+		
+	.menu
+		float: right
+		margin: 115px -18px 0
+		+flexbox
+		align-items(flex-start)
+		justify-content(space-around)
+		+breakpoint($tablet)
+			margin: -14px -18px 0
+
+		+breakpoint($tablet2)
+			display: none
+
+		
+		nav
+
+			ul
+				li
+					display: inline-block
+					margin: 0 12px 0 0
+
+					a
+						font-family: Open Sans
+						text-transform: uppercase
+						color: $marrom
+						+transition(.5s)
+
+						&:hover
+							color: $dourado
+
+						&:focus
+		                  color: $vinho-tinto
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+	

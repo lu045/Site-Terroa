@@ -1,0 +1,28 @@
+{
+  "name": "terroaempreendimentos",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0"
+  },
+  "dependencies": {
+    "npm-check-updates": "^2.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lu045/Site-Terro---Des.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lu045/Site-Terro---Des/issues"
+  },
+  "homepage": "https://github.com/lu045/Site-Terro---Des#readme",
+  "description": ""
+}

@@ -1,0 +1,106 @@
+.perfilemp
+	background-color: $marrom
+	width: 555px
+	height: 308px
+	position: relative
+	display: table
+	overflow: hidden
+	flex-wrap: wrap
+
+	+breakpoint($desktop-med)
+		width: 415px
+		height: 230px
+
+	+breakpoint($tablet-mod)
+		width: 305px
+		height: 170px		
+	
+	+breakpoint($smartphone-tuc2)
+		width: 280px
+		height: 155px
+
+		
+	figure
+
+		img
+		 max-width: 555px
+		 height: auto
+		 width: 100%
+		 position: absolute
+		 +transition(.6s)
+
+
+		 &:hover
+		 	 opacity: 0.2
+		 	 filter: alpha(opacity=60)
+ 
+		 	
+		 +breakpoint($desktop-med)
+		 	max-width: 415px
+
+		figcaption
+			font-family: Raleway
+			text-transform: uppercase
+			color: $branco
+			font-size: 28px
+			justify-content: center
+			align-items: center
+			text-align: center
+			padding-top: 22%
+			+transition(.8s)
+
+			+breakpoint($tablet-mod)
+				 	dislpay: none
+			
+			.borda
+				 &:hover
+				
+				 width: 350px
+				 height: 60px
+				 border: solid 5px $branco
+				 margin-left: 95px
+				 font-size: 25px
+				 padding-top: 5px
+				 line-height: 28px
+				
+
+				 +breakpoint($desktop-med)
+				 	width: 280px
+				 	height: 60px
+				 	font-size: 20px
+				 	border: solid 3px $branco
+				 	padding-top: 5px
+				 	margin-left: 65px
+
+
+				 +breakpoint($tablet-mod)
+				 	display: none
+				 
+
+				    
+				
+
+		
+
+
+		 
+
+
+
+
+				
+
+
+
+
+	
+		
+
+
+	
+
+
+	
+
+
+

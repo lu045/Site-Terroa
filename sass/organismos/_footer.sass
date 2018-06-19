@@ -1,0 +1,118 @@
+html
+
+	min-height: 100%
+	position: relative
+
+	+breakpoint($tablet-ms2)
+		position: absolute
+
+	+breakpoint($tablet-mod)
+		position: relative
+
+	+breakpoint($tablet-med2)
+		position: absolute
+	
+	+breakpoint($tablet-mor)
+		position: relative
+	
+
+footer
+	position: absolute
+	bottom: 0
+	width: 100%
+	background-color: $vinho
+	height: 205px
+
+
+	.controdape
+		
+		padding: 20px 0 0
+		font-family: Open Sans
+		color: $branco
+
+
+		.rsociais
+			
+			+flexbox
+			align-items: baseline
+			justify-content: center
+			min-height: 60px
+
+
+
+
+
+			i
+				font-size: 40px
+				color: $branco
+				margin: 0 15px 0
+				+transition(.5s)
+
+				&:hover
+				 color: $dourado
+
+
+
+		
+
+
+				+breakpoint($smartphone)
+					font-size: 35px
+					margin: 0 7px 0
+
+				+breakpoint($smartphone-wide)
+					font-size: 35px
+					margin: 0 7px 0
+
+			
+					
+
+		.continfo
+			text-align: center
+			line-height: 25px
+			min-height: 90px
+			
+
+			p
+				font-size: 18px
+				font-family: Open Sans
+
+				+breakpoint($smartphone)
+					font-size: 10px
+					
+
+				+breakpoint($smartphone-wide)
+					font-size: 12px
+
+
+		.copyright
+			text-align: center
+			line-height: 25px
+			p
+				font-size: 18px
+
+				+breakpoint($smartphone-mini)
+					font-size: 10px
+
+				+breakpoint($smartphone-wide)
+					font-size: 12px
+
+
+
+
+
+			 
+			
+			
+
+
+
+
+
+
+
+
+	
+
+		
+

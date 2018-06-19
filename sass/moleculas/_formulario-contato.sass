@@ -1,0 +1,71 @@
+form
+	+clearfix
+	+make-row
+	position: relative
+	width: 100%
+
+
+	.campos
+		margin: 10px 0 0 0
+		+flexbox
+		+clearfix
+		flex-direction: column
+		flex-wrap: wrap
+		width: 100%
+		position: relative
+	
+	
+		input
+			height: 25px
+			width: 100%	
+			+placeholder($marrom)
+			position: relative
+			border: 100% solid $marrom
+
+
+		textarea
+			height: 210px
+			width: 100%
+			resize: none
+			border: 100% solid $marrom
+			+placeholder($marrom)
+
+
+		select
+			color: $marrom
+			option: checked
+			height: 33px
+			width: 1175px
+			border: 100% solid $marrom
+
+			+breakpoint($desktop-med)
+				width: 975px
+
+			+breakpoint($tablet-mod)
+				width: 755px
+
+			+breakpoint($tablet-mor)
+				width: 100%
+
+
+	.item
+		width: 100%
+		font-family: Open Sans
+		font-size: 18px
+		color: $marrom
+
+		&:hover
+			outline: solid 2px $dourado
+
+		&:focus
+			outline: solid 2px $vinho
+	
+
+	button
+		margin: 0 -6px 0 0
+
+		+breakpoint($tablet-ms)
+			margin: 0 0 0 0
+			width: 100%
+
+

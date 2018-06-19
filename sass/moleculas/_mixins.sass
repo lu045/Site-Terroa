@@ -1,0 +1,140 @@
+/* ======== Cores */
+$preto: #000
+$branco: #fff
+$marrom: #43352f
+$marrom-medio: #503f38
+$marrom-escuro: #362b26
+$dourado: #cba876
+$dourado-dark: #b19367
+$vinho: #a93338
+$vinho-tinto: #692023
+$vinho-escuro: #361012
+$verde-claro: #34a952
+$verde-medio: #2C8F46
+$verde-escuro: #0a5c1f
+$verde-ultra: #074216
+$cinza: #e5e5e5
+$cinza-medio: #a5a5a5
+$cinza-claro: #edeef0
+$cinza-escuro: #6F7070
+$cinza-medio: #BBBBBD
+
+
+/* ======== Resolução */
+
+$smart-tv: max-width 2560px
+$desktop-ext: max-width 1920px
+$laptop: max-width 1440px
+$desktop: max-width 1279px
+$desktop-med: max-width 1199px
+$tablet: max-width 1024px
+$tablet2: max-width 1005px
+$tablet-ms2: max-width 998px 
+$tablet-ms: max-width 994px 
+$tablet-mod: max-width 991px
+$tablet-mt: max-width 1025px
+$tablet-med: max-width 799px
+$tablet-med2: max-width 779px
+$tablet-mor: max-width 767px
+$tablet-mar: max-width 761px
+$tablet-mae: max-width 760px
+$tablet-mzv: max-width 756px
+$tablet-mad: max-width 751px
+$tablet-mac: max-width 750px
+$tablet-doc: max-width 749px
+$tablet-dbb: max-width 741px
+$tablet-dab: max-width 740px
+$tablet-dbr: max-width 734px
+$tablet-dtr: max-width 733px
+$tablet-dyr: max-width 724px
+$tablet-dar2: max-width 721px
+$tablet-dar: max-width 720px
+$tablet-dva: max-width 715px
+$tablet-dsa2: max-width 707px
+$tablet-dsa: max-width 704px
+$tablet-iyti: max-width 699px
+$tablet-maan: max-width 695px
+$tablet-matr: max-width 693px
+$tablet-moza: max-width 692px
+$tablet-momc: max-width 691px
+$tablet-momc2: max-width 690px
+$tablet-dert: max-width 684px
+$tablet-warm: max-width 680px
+$tablet-rarm: max-width 676px
+$tablet-romc2: max-width 671px
+$tablet-romc: max-width 670px
+$tablet-jgtr: max-width 669px
+$tablet-marc: max-width 660px
+$tablet-maro: max-width 655px
+$tablet-maio: max-width 650px
+$tablet-mprt: max-width 645px
+$tablet-dbva: max-width 636px
+$tablet-dlag: max-width 626px
+$tablet-urop: max-width 623px
+$tablet-dzvg: max-width 616px
+$tablet-uitr: max-width 610px
+$tablet-dbag: max-width 606px
+$tablet-lapa: max-width 602px
+$tablet-pogg2: max-width 599px
+$tablet-pogg: max-width 597px
+$tablet-dgap: max-width 596px
+$tablet-lxta: max-width 590px
+$tablet-dubs: max-width 576px
+$tablet-rapa: max-width 566px
+$tablet-rbpu: max-width 562px
+$tablet-pqta: max-width 558px
+$tablet-dibs: max-width 556px
+$tablet-uwer1: max-width 546px
+$tablet-uwer: max-width 545px
+$tablet-ower: max-width 541px
+$tablet-debs2: max-width 539px
+$tablet-debs: max-width 536px
+$tablet-yatr2: max-width 529px
+$tablet-yatr: max-width 525px
+$tablet-dops: max-width 516px
+$tablet-dles: max-width 513px
+$tablet-dhip: max-width 510px
+$tablet-dcca: max-width 507px
+$tablet-midi: max-width 500px
+$smartphone-lcva: max-width 498px
+$smartphone-lvsa: max-width 495px
+$smartphone-luca: max-width 493px
+$smartphone-lasa: max-width 490px
+$smartphone-wide: max-width 480px
+$smartphone-wide2: max-width 475px
+$smartphone-wide22: max-width 473px
+$smartphone-deb: max-width 459px
+$smartphone-aut: max-width 450px
+$smartphone-tid2: max-width 446px
+$smartphone-tid: max-width 438px
+$smartphone-pud: max-width 425px
+$smartphone-pad: max-width 420px
+$smartphone-int: max-width 415px
+$smartphone-med2: max-width 399px
+$smartphone-med4: max-width 389px
+$smartphone-med3: max-width 379px
+$smartphone-med1: max-width 375px
+$smartphone-med: max-width 374px
+$smartphone-pua: max-width 365px
+$smartphone-mid: max-width 359px
+$smartphone-mud: max-width 352px
+$smartphone-tuc: max-width 349px
+$smartphone-tuc2: max-width 340px
+$smartphone-tud2: max-width 330px
+$smartphone-tud: max-width 329px
+$smartphone-tad: max-width 328px
+$smartphone-tod: max-width 325px
+$smartphone: max-width 320px
+$smartphone-mini: max-width 240px
+
+=flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex
+
+  /* ======== Columns */
+=columns($count: 3, $gap: 10) 
+  @include css3-prefix('column-count', $count)
+  @include css3-prefix('column-gap', $gap)
