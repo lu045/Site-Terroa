@@ -11,43 +11,61 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/sobre.css">
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
-	<link rel="stylesheet" type="text/css" href="css/plugins.css">	
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('ul').toggleClass('active');
+			})
+		})		
+	</script>	
 </head>
 
 
 <body>
+ <header>    
+     <div class="container">
+         <!-- Logo Terroá -->
+         <div class="logo">
+             <a href="index.html">
+		         <img src="imagens/logo-terroa.svg" alt="Terroá Empreendimentos">
+	         </a>
+	     </div>
 
-
- 
-
-	<header>
-    
-    <div class="container">
-
-   <!-- Logo Terroá -->
-    <div class="logo">
-     <a href="index.html">
-		<img src="imagens/logo-terroa.svg" alt="Terroá Empreendimentos">
-	 </a>
-	</div>
-
-	<!-- Menu Header -->
-	<div class="menu">
-	 <nav>
-		<ul>
-			<li><a href="sobre.html">Sobre</a></li>	
-			<li><a href="empreendimentos.html">Empreendimentos</a></li>	
-			<li><a href="parcerias.html">Parcerias</a></li>	
-			<li><a href="contato.html">Contato</a></li>			
-		</ul>
-	 </nav>
-    </div>
-
-    </div>
-
-	</header>
-
-	
+	      <!-- Menu Header -->
+	     <div class="menu">
+	         <nav>
+		        <ul>
+			      <li><a href="sobre.html">Sobre</a></li>	
+			      <li><a href="empreendimentos.html">Empreendimentos</a></li>	
+			      <li><a href="parcerias.html">Parcerias</a></li>	
+			      <li><a href="contato.html">Contato</a></li>	
+			      <li><a href="blog.html">Blog</a></li>				
+		        </ul>
+	         </nav>
+          </div>
+          <!-- Botão Menu Responsivo -->
+          <button class="toggle">
+          	 <div class="cbar">
+          	 	 <div class="bar"></div>
+          	     <div class="barcent"></div>
+          	     <div class="bar2"></div>          		
+          	 </div>
+          
+          </button>        
+     </div>
+ </header>
+ <!-- Menu Responsivo -->
+ <div class="responsive">
+	 <ul class="">
+ 	     <li><a href="sobre.html">Sobre</a></li>	
+         <li><a href="empreendimentos.html">Empreendimentos</a></li>	
+         <li><a href="parcerias.html">Parcerias</a></li>	
+         <li><a href="contato.html">Contato</a></li>
+         <li><a href="blog.html">Blog</a></li>					
+     </ul>
+ </div>
 
  <!-- Conteudo da Pagina -->
  <main>
