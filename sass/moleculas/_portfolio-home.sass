@@ -1,0 +1,98 @@
+.portifolio-resumo
+	margin-top: -10px
+	width: 100%
+	height: 400px
+	background-color: #124
+	+clearfix
+
+	ul
+		
+		//background-color: $dourado
+		+flexbox
+		+clearfix
+		+make-row
+		flex-direction: row       
+		justify-content: space-between
+		align-content: space-between
+		align-items: stretch
+
+		+breakpoint($desktop-med)
+			flex-wrap: wrap
+			flex-direction: column
+			margin-left: 190px
+
+
+		
+		li
+			width: 350px 
+			height: 245px 
+			+transition(.5s)
+
+			+breakpoint($desktop-med)
+				width: 555px
+				height: 388px
+				margin-top: 25px
+		
+
+
+
+			&:hover
+				transform: scale(1.1)
+			figure
+
+				position: relative
+				width: 100%
+				height: auto
+
+				.filtro
+					
+					background-color: rgba(0,0,0,0.3)
+					position: absolute
+					width: 350px
+					height: 245px
+					+transition(.5s)
+
+					+breakpoint($desktop-med)
+						width: 555px
+						height: 388px
+					
+
+
+
+					&:hover
+						background-color: rgba(0,0,0,0.6)
+				
+				img
+					width: 100%
+					height: auto
+
+
+
+
+				figcaption
+
+					margin-top: -150px
+					justify-content: center
+					align-items: center
+					text-align: center
+					position: relative
+					+transition(.5s)
+
+					&:hover
+						transform: scale(1.2)
+
+
+					h2
+						font-family: Raleway
+						color: $branco
+						text-transform: uppercase
+						font-size: 23px
+
+					p 
+						font-family: Raleway
+						color: $branco
+						font-size: 20px
+
+
+
+
