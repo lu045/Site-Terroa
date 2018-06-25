@@ -8,8 +8,17 @@
 	justify-content: center
 	position: absolute
 
+	+breakpoint($desktop-med)
+		margin-left: 210px
+		width: 134px
+		height: 42px
+
 	h2
 		font-size: 18px
+		margin-top: 10px
+
+		+breakpoint($desktop-med)
+			font-size: 23px
 
 
 .home-p
@@ -22,5 +31,15 @@
 	justify-content: center
 	position: absolute
 
+	+breakpoint($desktop-med)
+		width: 212px
+		height: 41px
+		margin-left: 160px
+
 	h2
 		font-size: 20px
+		margin-top: 8px
+
+		+breakpoint($desktop-med)
+			font-size: 23px
+
