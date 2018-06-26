@@ -5,19 +5,25 @@
 	flex-direction: row
 	flex-wrap: wrap
 
-	+breakpoint($tablet-maio)
+	+breakpoint($desktop-med)
 		flex-direction: column
+		justify-content: center
+		align-content: space-between 
+		margin-top: -20px
 
 		
 	.item		
-		margin: 8px 15px 0 0
+		margin: -10px 15px 0 0
 		+placeholder($marrom)
+
+		+breakpoint($desktop-med)
+			margin: 10px 15px 0 0
 
 
 	.cname
 		
 		width: 44%
-		height: 20px
+		height: 29px
 		outline: none
 		font-family: Open Sans
 		font-size: 18px
@@ -29,38 +35,14 @@
 		&:focus
 			outline: solid 2px $vinho-tinto
 
-		+breakpoint($tablet-mod)
-			width: 40%
-		
-
-
-		+breakpoint($tablet-maio)
-			width: 97%
-		
-		
-		+breakpoint($tablet-dlag)
-			width: 96%
-
-		+breakpoint($tablet-midi)
-			width: 96%
-
-		+breakpoint($smartphone-pud)
-			width: 95%
-
-
-
-		+breakpoint($smartphone-pad)
-			width: 94%
+		+breakpoint($desktop-med)
+			width: 100%
 
 		
-		+breakpoint($smartphone)
-			width: 93%
-
-
 	.cemail
 
 		width: 44%
-		height: 20px
+		height: 29px
 		outline: none	
 		font-family: Open Sans
 		font-size: 18px
@@ -73,30 +55,10 @@
 		&:focus
 			outline: solid 2px $vinho-tinto
 
-		+breakpoint($tablet-mod)
-			width: 40%
+		+breakpoint($desktop-med)
+			width: 100%
 
 
-		+breakpoint($tablet-maio)
-			width: 97%
-
-
-		+breakpoint($tablet-dlag)
-			width: 96%
-
-		+breakpoint($tablet-midi)
-			width: 96%
-
-
-		+breakpoint($smartphone-pud)
-			width: 95%
-
-
-		+breakpoint($smartphone-pad)
-			width: 94%
-
-		+breakpoint($smartphone)
-			width: 93%
 
 
 
