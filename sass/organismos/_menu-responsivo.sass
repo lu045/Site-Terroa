@@ -9,7 +9,10 @@
 	 display: none
 
 	 &.active
-		 display: block
+		 display: none
+
+		 +breakpoint($tablet2)
+		 	display: block
 		
 	
 	li
