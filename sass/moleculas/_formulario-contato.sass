@@ -6,7 +6,6 @@ form
 
 
 	.campos
-		margin: 10px 0 0 0
 		+flexbox
 		+clearfix
 		flex-direction: column
@@ -16,7 +15,7 @@ form
 	
 	
 		input
-			height: 25px
+			height: 30px
 			width: 100%	
 			+placeholder($marrom)
 			position: relative
@@ -34,18 +33,10 @@ form
 		select
 			color: $marrom
 			option: checked
-			height: 33px
-			width: 1175px
+			height: 30px
+			width: 100%
 			border: 100% solid $marrom
 
-			+breakpoint($desktop-med)
-				width: 975px
-
-			+breakpoint($tablet-mod)
-				width: 755px
-
-			+breakpoint($tablet-mor)
-				width: 100%
 
 
 	.item
@@ -62,7 +53,6 @@ form
 	
 
 	button
-		margin: 0 -6px 0 0
 
 		+breakpoint($tablet-ms)
 			margin: 0 0 0 0
