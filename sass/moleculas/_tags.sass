@@ -4,30 +4,13 @@
 	text-align: center
 	+clearfix
 	+flexbox
-	margin: 15px 100px 0 
-
-	+breakpoint($desktop-med)
-	   margin: 15px 50px 0 
-
-	+breakpoint($tablet-mod)
-	   margin: 15px 35px 0 
-
-	+breakpoint($smartphone-tuc2)
-	   margin: 15px 25px 0 
-
 
 	h2
 		font-size: Raleway
 		color: $branco
 		text-align: center
 		font-size: 40px
-
-		+breakpoint($desktop-med)
-		  font-size: 33px
-
-		+breakpoint($tablet-mod)
-		  font-size: 23px
-		
+		margin-top: 5px
 
 .tag-p
 	justify-content: center
@@ -35,30 +18,34 @@
 	text-align: center
 	+clearfix
 	+flexbox
-	margin: 15px 170px 0 
-
-	+breakpoint($desktop-med)
-	  margin: 15px 115px 0
-
-	+breakpoint($tablet-mod)
-	  margin: 15px 70px 0  
-
-	+breakpoint($smartphone-tuc2)
-	  margin: 15px 60px 0  
-	  
 
 	h2
 		font-size: Raleway
 		color: $branco
 		text-align: center
 		font-size: 40px
+		margin-top: 5px
 
 		+breakpoint($desktop-med)
-		  font-size: 33px
+			font-size: 35px
 
 		+breakpoint($tablet-mod)
-		  font-size: 25px
-		
+			font-size: 28px
+			margin-top: 8px
+
+.tag-e
+	justify-content: center
+	align-items: center
+	text-align: center
+	+clearfix
+	+flexbox
+
+	h2
+		font-size: Raleway
+		color: $branco
+		text-align: center
+		font-size: 40px
+		margin-top: 5px		
 
 .obras
 	width: 220px
@@ -71,14 +58,6 @@
 		background-color: $dourado-dark
 		transform: scale(1.2)
 
-	+breakpoint($desktop-med)
-	  width: 190px
-	  transform: scale(1.0)
-
-	+breakpoint($tablet-mod)
-	 width: 160px
-	
-
 .pronto
 	width: 360px
 	height: 67px
@@ -90,19 +69,8 @@
 		background-color: $verde-medio
 		transform: scale(1.2)
 
-	+breakpoint($desktop-med)
-	 width: 310px
-	 height: 67px
-	 transform: scale(1.0)
-
-
-	+breakpoint($tablet-mod)
-	 width: 230px
-	 height: 67px
-
-
 .entregue
-	width: 220px
+	width: 200px
 	height: 67px
 	background-color: $verde-escuro
 	border-radius: 10px
@@ -111,13 +79,6 @@
 	&:hover
 		background-color: $verde-ultra
 		transform: scale(1.2)
-
-	+breakpoint($desktop-med)
-	  width: 190px
-
-	+breakpoint($tablet-mod)
-	 width: 160px
-
 
 
 

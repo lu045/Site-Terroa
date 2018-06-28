@@ -1,64 +1,56 @@
-.perfilemp
-	background-color: $marrom
+.perfil
+	background-color: $cinza-claro
+	height: 580px
 	width: 100%
-	height: 303px
 	position: relative
-	display: table
-	overflow: hidden
-	flex-wrap: wrap
+	border: solid 3px $preto
 
-	figure
+	.foto-e
 
-		img
-		 height: auto
-		 width: 100%
-		 position: absolute
-		 +transition(.6s)
-
-
-		 &:hover
-		 	 opacity: 0.2
-		 	 filter: alpha(opacity=60)
-
-		figcaption
-			font-family: Raleway
-			text-transform: uppercase
-			color: $branco
-			font-size: 28px
-			justify-content: center
-			align-items: center
-			text-align: center
-			padding-top: 22%
-			+transition(.8s)
-
-			+breakpoint($tablet-mod)
-				 	dislpay: none
-			
-			.borda
-				 &:hover
-				
-				 width: 400px
-				 height: 80px
-				 border: solid 5px $branco
-				 margin-left: 60px
-				 font-size: 25px
-				 padding-top: 5px
-				 line-height: 28px
-				
-
-
-				    
-				
-
+		&:hover
+			background-color: $dourado
 		
 
+		.borda
 
-		 
+			&:hover
+				position: absolute
+				border: solid 8px $dourado
+				width: 80%
+				margin-left: 50px
 
 
 
 
+			h1
+
+
+
+				&:hover
+					font-family: Raleway
+					text-align: center
+					color: $dourado
+					font-size: 30px
 				
+
+
+		
+		img
+			border-bottom: solid 3px $preto
+		
+
+	.especificacoes
+
+		margin-top: 10px
+
+		ul
+			text-align: center
+			li
+				font-family: Open Sans
+				font-size: 33px
+				color: $marrom
+
+
 
 
 
