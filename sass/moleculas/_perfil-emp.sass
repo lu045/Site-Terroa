@@ -5,6 +5,10 @@
 	position: relative
 	border: solid 3px $preto
 	+transition(.6s)
+	margin-top: 30px
+
+	+breakpoint($desktop-med)
+		height: 530px
 
 	&:hover
 		background-color: $cinza-escuro
@@ -20,7 +24,7 @@
 			  opacity: 0.6
 		 	  filter: alpha(opacity=60)
 
-		
+
 		
 
 	.especificacoes
@@ -38,6 +42,10 @@
 				&:hover
 					transform: scale(1.2)
 					color: $branco
+
+					+breakpoint($desktop-med)
+						transform: scale(1.0)
+						color: $marrom
 
 
 
