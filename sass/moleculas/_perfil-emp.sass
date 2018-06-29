@@ -4,39 +4,23 @@
 	width: 100%
 	position: relative
 	border: solid 3px $preto
+	+transition(.6s)
+
+	&:hover
+		background-color: $cinza-escuro
 
 	.foto-e
-
-		&:hover
-			background-color: $dourado
-		
-
-		.borda
-
-			&:hover
-				position: absolute
-				border: solid 8px $dourado
-				width: 80%
-				margin-left: 50px
-
-
-
-
-			h1
-
-
-
-				&:hover
-					font-family: Raleway
-					text-align: center
-					color: $dourado
-					font-size: 30px
-				
-
-
-		
+	
 		img
 			border-bottom: solid 3px $preto
+			width: 100%
+			+transition(.6s)
+
+			&:hover
+			  opacity: 0.6
+		 	  filter: alpha(opacity=60)
+
+		
 		
 
 	.especificacoes
@@ -49,6 +33,11 @@
 				font-family: Open Sans
 				font-size: 33px
 				color: $marrom
+				+transition(.5s)
+
+				&:hover
+					transform: scale(1.2)
+					color: $branco
 
 
 
