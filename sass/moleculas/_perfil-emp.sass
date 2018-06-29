@@ -16,6 +16,11 @@
 	+breakpoint($tablet-mor)
 		height: 580px
 
+	+breakpoint($tablet-dubs2)
+		height: auto
+		padding-bottom: 28px
+		postion: relative
+
 	&:hover
 		background-color: $cinza-escuro
 
@@ -29,9 +34,6 @@
 			&:hover
 			  opacity: 0.6
 		 	  filter: alpha(opacity=60)
-
-
-		
 
 	.especificacoes
 
@@ -51,6 +53,14 @@
 				+breakpoint($tablet-mor)
 					font-size: 33px
 
+				+breakpoint($smartphone-deb)
+					font-size: 28px
+
+				+breakpoint($smartphone-med2)
+					font-size: 23px
+				
+				+breakpoint($smartphone-tud3)
+					font-size: 18px
 
 				&:hover
 					transform: scale(1.2)
