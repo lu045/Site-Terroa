@@ -10,6 +10,9 @@
 	+breakpoint($desktop-med)
 		height: 530px
 
+	+breakpoint($tablet-mod)
+		height: 400px
+
 	&:hover
 		background-color: $cinza-escuro
 
@@ -38,6 +41,9 @@
 				font-size: 33px
 				color: $marrom
 				+transition(.5s)
+
+				+breakpoint($tablet-mod)
+					font-size: 23px
 
 				&:hover
 					transform: scale(1.2)
