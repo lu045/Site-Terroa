@@ -76,17 +76,27 @@
 	 	 	    	 
 	 	 	     <h1>Blog</h1>
 
-	 	 	     <div class="row">
-	 	 	     	 <div class="col-lg-8">
-	 	 	             <div class="categorias">
-	 	 	     	         <ul>
-	 	 	     	 	         <li class="l"><a href="#">Lançamentos</a></li>
-	 	 	     	 	         <li class="o"><a href="#">Obras</a></li>
-	 	 	     	 	         <li class="m"><a href="#">Mercado Imobiliário</a></li>
-	 	 	     	 	         <li class="v"><a href="#">Variedades</a></li>
-	 	 	     	 	         <li class="e"><a href="#">Empreendimentos</a></li>
-	 	 	     	         </ul>
-	 	 	             </div>
+	 	 	     <div class="categorias-busca">
+	 	 	         <div class="row">
+	 	 	     	     <div class="col-lg-6">
+	 	 	     	     	 <div class="barra-busca">
+	 	 	     	     	 	 <input type="text" name="search" placeholder="Pesquisar...">
+	 	 	     	     	 	 <a href="#">
+	 	 	     	     	 	 	 <i class="fas fa-search"></i>
+	 	 	     	     	 	 </a>
+	 	 	     	     	 </div>	 	 	     	 	
+	 	 	     	     </div>
+
+	 	 	     	     <div class="col-lg-5">
+	 	 	     	     	 <select name="category" onchange="location = this.value;">	 	 	     	     	
+	 	 	     	     		 <option value="" disabled selected style="display: none;">Categorias</option>
+	 	 	     	     		 <option value="#">Lançamentos</option>
+	 	 	     	     		 <option value="#">Obras</option>
+	 	 	     	     		 <option value="#">Mercado Imobiliário</option>
+	 	 	     	     		 <option value="#">Variedades</option>
+	 	 	     	     		 <option value="#">Empreendimentos</option>	 	 	     	     		
+	 	 	     	     	 </select>
+	 	 	     	     </div>	 	 	       
 	 	 	         </div>
 	 	 	     </div>
 
