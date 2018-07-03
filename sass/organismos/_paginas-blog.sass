@@ -3,11 +3,7 @@
 
 	ul
 		+flexbox
-		justify-content: center
-		
-
-		
-		
+		justify-content: center		
 		
 		li
 			width: 48px
@@ -17,8 +13,12 @@
 			border-radius: 3px
 			position: relative
 			margin-left: 12px
-		
 
+			+breakpoint($smartphone-aut)
+				width: 30px
+				height: 33px
+				margin-left: 10px
+		
 			.numerais
 				font-family: Open Sans
 				font-size: 48px
@@ -26,29 +26,51 @@
 				margin-left: 9px
 				margin-top: -12px
 
+				+breakpoint($smartphone-aut)
+					font-size: 33px
+					margin-left: 4px
+					margin-top: -11px
 
 			.inicio
 				margin-left: -4px
 				margin-top: 3px
 
+				+breakpoint($smartphone-aut)
+					margin-left: -2px
+					margin-top: 1px
+
 				img
 					margin-top: 3px
 					margin-left: 5px
 					position: absolute
+
+					+breakpoint($smartphone-aut)
+						margin-top: 2px
+						margin-left: 2px
 
 			.primeira
 				margin-left: -12px
 				margin-top: 6px
 
+				+breakpoint($smartphone-aut)
+					margin-left: -6px
+					margin-top: 2px
+
 				img
 					margin-left: 20px
 					position: absolute
 					transform: rotate(180deg)
 
+					+breakpoint($smartphone-aut)
+						margin-left: 10px
+
 			.inicio2
 				margin-left: -1px
 				margin-top: 3px
 
+				+breakpoint($smartphone-aut)
+					margin-left: 0
+					margin-top: 1px
 
 				img
 					margin-top: 3px
@@ -56,14 +78,24 @@
 					position: absolute
 					transform: rotate(180deg)
 
+					+breakpoint($smartphone-aut)
+						margin-top: 2px
+						margin-left: 2px
+
 			.primeira2
 				margin-left: -8px
 				margin-top: 6px
 
+				+breakpoint($smartphone-aut)
+					margin-top: 3px
+					margin-left: -4px
 
 				img
 					margin-left: 20px
 					position: absolute
+
+					+breakpoint($smartphone-aut)
+						margin-left: 10px
 
 			
 
