@@ -24,12 +24,19 @@
 		//background-color: $verde-escuro
 		width: 100%
 
-
 		.barra-busca
 			width: 100%
 			justify-content: flex-start
 			background-color: $branco			
 			border-radius: 3px
+			border: 2px solid $dourado
+
+			&:hover
+			    border: 2px solid $vinho
+			&:active
+			    border: 2px solid $vinho
+			&:focus
+			    border: 2px solid $vinho
 
 			input
 				width: 93%
@@ -46,7 +53,42 @@
 			i 
 				font-size: 22px
 				margin-top: 5px
+				margin-left: 5px
 				color: $marrom
+				position: absolute
+
+				+breakpoint($desktop-med)
+					margin-left: -1px
+
+				+breakpoint($tablet-mod)
+					margin-left: 2%
+
+				+breakpoint($tablet-mor)
+					margin-left: 1%
+
+				+breakpoint($tablet-dubs2)
+					margin-left: -1px
+					
+				+breakpoint($tablet-yatr)
+					margin-left: -1%
+					position: relative
+
+				+breakpoint($smartphone-wide)
+					margin-left: -1%
+					position: absolute
+
+				+breakpoint($smartphone-int)
+					margin-left: -2%
+
+				+breakpoint($smartphone-mid)
+					margin-left: -3%
+
+				+breakpoint($smartphone-tod)
+					margin-left: -4%
+
+
+
+				
 		
 		select
 			background-color: $branco
@@ -57,14 +99,27 @@
 			text-transform: uppercase
 			text-align: left
 			outline: none
-			border: none
+			border: 2px solid $dourado
 			border-radius: 3px
 			color: $marrom
-
-	
+			appearance: none
+            -webkit-appearance: none
+            -moz-appearance: none
+            -o-appearance: none
+			
+			+breakpoint($tablet-mod)
+				margin-top: 12px
+				height: 80%
 			
 
+			&:hover
+				border: 2px solid $vinho
 
+			&:active
+				border: 2px solid $vinho
+
+			&:focus
+				border: 2px solid $vinho
 
 	.posts
 		margin-top: 20px
