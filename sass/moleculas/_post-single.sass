@@ -7,6 +7,9 @@
 
 		margin-top: -14px
 
+		+breakpoint($tablet-mod)
+			margin-top: -11px
+
 		.caminho
 			justify-content: flex-start
 
@@ -24,11 +27,17 @@
 		.date
 			justify-content: flex-end
 
+			+breakpoint($tablet-mor)
+				margin-top: -8px
+
 			h4
 				font-family: Open Sans
 				font-size: 15px
 				color: $preto
 				text-align: right
+
+				+breakpoint($tablet-mor)
+					text-align: left
 
 			
 
@@ -54,6 +63,8 @@
 
 	.foto-post
 
+		margin-top: -3px
+
 		img
 			width: 100%
 			height: auto
@@ -78,7 +89,6 @@
 		position: relative
 		margin-top: 8px
 		.cal-to-action
-			//background-color: $dourado
 			+flexbox
 			position: relative
 			
@@ -93,6 +103,11 @@
 				margin-top: 1px
 				margin-left: 12px
 
+				+breakpoint($tablet-mod)
+					font-size: 20px
+					margin-top: 5px
+
+
 		.redes-sociais
 			+flexbox
 			margin-left: -15px
@@ -105,6 +120,14 @@
 				height: 61px
 				border-radius: 5px
 
+				+breakpoint($tablet-mod)
+					width: 45px
+					height: 45px
+
+				+breakpoint($smartphone-pua2)
+					width: 36px
+					height: 36px
+
 				&:hover
 					background-color: $vinho
 
@@ -113,39 +136,93 @@
 					font-size: 42px
 					position: absolute
 
+					+breakpoint($tablet-mod)
+						font-size: 30px
+
+					+breakpoint($smartphone-pua2)
+						font-size: 24px
+
 
 				.i1
 					margin-left: 18px
 					margin-top: 9px
 					position: absolute
 
+					+breakpoint($tablet-mod)
+						margin-left: 15px
+						margin-top: 8px
+
+					+breakpoint($smartphone-pua2)
+						margin-left: 12px
+						margin-top: 6px
+
 				.i2
 					margin-left: 10px
 					margin-top: 11px
 					position: absolute
+
+					+breakpoint($tablet-mod)
+						margin-left: 9px
+						margin-top: 8px
+
+					+breakpoint($smartphone-pua2)
+						margin-left: 7px
+						margin-top: 6px
 
 				.i3
 					margin-left: 5px
 					margin-top: 11px
 					position: absolute
 
+					+breakpoint($tablet-mod)
+						margin-left: 5px
+						margin-top: 8px
+
+					+breakpoint($smartphone-pua2)
+						margin-left: 3px
+						margin-top: 6px
+
 				.i4
 					margin-left: 14px
 					margin-top: 11px
 					position: absolute
+
+					+breakpoint($tablet-mod)
+						margin-left: 12px
+						margin-top: 8px
+
+					+breakpoint($smartphone-pua2)
+						margin-left: 8px
+						margin-top: 6px
 
 				.i5
 					margin-left: 12px
 					margin-top: 10px
 					position: absolute
 
+					+breakpoint($tablet-mod)
+						margin-left: 10px
+						margin-top: 8px
+
+					+breakpoint($smartphone-pua2)
+						margin-left: 7px
+						margin-top: 6px
+
 				.i6
 					margin-left: 13px
 					margin-top: 11px
 					position: absolute
 
+					+breakpoint($tablet-mod)
+						margin-left: 10px
+						margin-top: 8px
+
+					+breakpoint($smartphone-pua2)
+						margin-left: 8px
+						margin-top: 6px
+
 .relacionados
-	margin-top: 30px
+	margin-top: 25px
 	width: 100%
 
 
@@ -153,26 +230,62 @@
 		font-size: 34px
 		font-family: Raleway
 		color: $marrom
+
+		+breakpoint($tablet-mod)
+			font-size: 25px
+
+		+breakpoint($tablet-mor)
+			font-size: 22px
 	
 	.fotopr-1
 
 		width: 351px
 		height: 212px
-		position: relative
 		margin-top: 5px
+		position: relative
+		display: block
+		//background-color: $dourado
+
+		+breakpoint($desktop-med)
+			width: 296px
+			height: 179px
+
+		+breakpoint($tablet-mod)
+			width: 218px
+			height: 132px
+
+		+breakpoint($tablet-mor)
+			width: 171px
+			height: 104px
+
+		+breakpoint($tablet-dubs2)
+			width: 100%
+			height: auto
+			margin-top: -1px
 
 		img
 			width: 100%
 			height: auto
-			position: absolute
+			position: relative
+	h3
+		font-family: Raleway
+		font-size: 20px
+		color: $marrom
+		margin-top: 5px
 
-	.description-post
-		margin-top: -60px
+		+breakpoint($tablet-mor)
+			font-size: 17px
 
-		h3
-			font-family: Raleway
-			font-size: 30px
-			color: $marrom
+		+breakpoint($tablet-dubs2)
+			font-size: 25px
+
+
+	
+
+
+
+
+		
 
 
 
