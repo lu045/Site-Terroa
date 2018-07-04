@@ -3,7 +3,37 @@
 	width: 100%
 	position: relative
 
+	.site-map
+
+		margin-top: -14px
+
+		.caminho
+			justify-content: flex-start
+
+			h4
+				font-family: Open Sans
+				font-size: 15px
+				color: $preto
+				text-align: left
+			a
+				text-decoration: none
+				font-family: Open Sans
+				font-size: 15px
+				color: $preto
+				text-align: left
+		.date
+			justify-content: flex-end
+
+			h4
+				font-family: Open Sans
+				font-size: 15px
+				color: $preto
+				text-align: right
+
+			
+
 	.title
+		margin-top: -3px
 
 		h1
 			font-family: Raleway
@@ -42,6 +72,117 @@
 
 			+breakpoint($smartphone-aut)
 				font-size: 16px
+
+	.share
+		//background-color: $vinho
+		position: relative
+		margin-top: 8px
+		.cal-to-action
+			//background-color: $dourado
+			+flexbox
+			position: relative
+			
+			i
+				font-size: 35px
+				color: $marrom
+
+			h2
+				font-family: Raleway
+				font-size: 28px
+				color: $marrom
+				margin-top: 1px
+				margin-left: 12px
+
+		.redes-sociais
+			+flexbox
+			margin-left: -15px
+			margin-top: 8px
+
+			.quad
+				background-color: $marrom
+				margin-left: 15px
+				width: 61px
+				height: 61px
+				border-radius: 5px
+
+				&:hover
+					background-color: $vinho
+
+				i
+					color: $branco
+					font-size: 42px
+					position: absolute
+
+
+				.i1
+					margin-left: 18px
+					margin-top: 9px
+					position: absolute
+
+				.i2
+					margin-left: 10px
+					margin-top: 11px
+					position: absolute
+
+				.i3
+					margin-left: 5px
+					margin-top: 11px
+					position: absolute
+
+				.i4
+					margin-left: 14px
+					margin-top: 11px
+					position: absolute
+
+				.i5
+					margin-left: 12px
+					margin-top: 10px
+					position: absolute
+
+				.i6
+					margin-left: 13px
+					margin-top: 11px
+					position: absolute
+
+.relacionados
+	margin-top: 30px
+	width: 100%
+
+
+	h2
+		font-size: 34px
+		font-family: Raleway
+		color: $marrom
+	
+	.fotopr-1
+
+		width: 351px
+		height: 212px
+		position: relative
+		margin-top: 5px
+
+		img
+			width: 100%
+			height: auto
+			position: absolute
+
+	.description-post
+		margin-top: -60px
+
+		h3
+			font-family: Raleway
+			font-size: 30px
+			color: $marrom
+
+
+
+					
+				
+
+
+
+		
+
 
 
 

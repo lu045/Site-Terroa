@@ -1,12 +1,13 @@
-.areablog
+.areasingle
 	//background-color: #456
 	width: 100%
 	height: 100%
 	position: relative
 	padding-bottom: 250px
 	margin-top: 20px
+	+clearfix
 
-.blog
+.post
 	position: relative
 
 
@@ -56,6 +57,9 @@
 				margin-left: 5px
 				color: $marrom
 				position: absolute
+
+				&:hover
+					color: $vinho-escuro
 
 				+breakpoint($desktop-med)
 					margin-left: -1px
