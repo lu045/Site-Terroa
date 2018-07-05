@@ -6,31 +6,114 @@
 		font-size: 23px
 		color: $preto
 
-.resultados
-
+.resuldados
+	//background-color: $dourado
+	position: relative
 	width: 100%
-	height: 230px
-	background-color: $dourado
-
-	.image-post
-
-		width: 100%
-		height: 230px
-		background-color: $vinho
-
-
-		img 
-
-	article
 	
 
-		h1
-			font-size: 23px
-			font-family: Raleway
-			color: $marrom
-			
-		p
-			font-family: Open Sans
-			font-size: 16px
-			color: $preto
+	+breakpoint($tablet-mod)
+		display: none
 
+	img
+		width: 350px
+		height: auto
+
+		+breakpoint($desktop-med)
+			width: 100%
+
+	.description
+
+		article
+
+			h1
+				font-family: Raleway
+				text-transform: none
+				color: $marrom
+				font-size: 24px
+
+				+breakpoint($desktop-med)
+					font-size: 20px
+
+			h2
+				font-family: Open Sans
+				color: $cinza-escuro
+				font-size: 15px
+				margin-top: -10px
+
+			p
+				font-family: Open Sans
+				color $preto
+				font-size: 15px
+
+				+breakpoint($desktop-med)
+					margin-top: -3px
+	
+	.r1
+		margin-top: 25px
+	.r2
+		margin-top: 25px
+	.r3
+		margin-top: 25px
+	.r4
+		margin-top: 25px
+	
+
+.resuldados-responsivo
+	//background-color: $dourado
+	position: relative
+	width: 100%
+	display: none
+
+	+breakpoint($tablet-mod)
+		display: block
+
+	img
+		width: 100%
+		height: auto
+
+
+	.description
+
+		article
+			text-align: left
+
+			a 
+				text-decoration: none
+
+			h1
+				font-family: Raleway
+				text-transform: none
+				color: $marrom
+				font-size: 25px
+
+				+breakpoint($smartphone-wide)
+					font-size: 20px
+
+			h2
+				font-family: Open Sans
+				color: $cinza-escuro
+				text-decoration: none
+				font-size: 18px
+				margin-top: -10px
+
+				+breakpoint($smartphone-wide)
+					font-size: 18px
+
+			p
+				font-family: Open Sans
+				color $preto
+				font-size: 20px
+
+				+breakpoint($smartphone-wide)
+					font-size: 18px
+	.r1
+		margin-top: 20px
+	.r2
+		margin-top: 20px
+	.r3
+		margin-top: 20px
+	.r4
+		margin-top: 20px
+
+		
