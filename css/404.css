@@ -1,0 +1,1 @@
+section{position:relative}section:before,section:after{content:" ";display:table}section:after{clear:both}body{background-image:url("../imagens/fundo-pages.png");background-position:center;background-attachment:scroll;background-size:cover;background-repeat:no-repeat}.area404{background-color:#456;width:100%;height:100%;position:relative;padding-bottom:250px;margin-top:80px}
