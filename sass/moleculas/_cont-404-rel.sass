@@ -9,6 +9,9 @@
 		color: $marrom
 		text-align: center
 
+		+breakpoint($desktop-med)
+			font-size: 30px
+
 		+breakpoint($tablet-mod)
 			font-size: 25px
 
@@ -22,6 +25,16 @@
 	margin-left: -10px
 	margin-top: 10px
 
+	+breakpoint($desktop-med)
+		justify-content: center
+		margin-left: -115px
+
+	+breakpoint($tablet-mod)
+		display: block
+		margin-top: -220px
+		margin-left: 55px
+
+
 
 
 	.fotopr-1
@@ -34,21 +47,17 @@
 		//background-color: $dourado
 
 		+breakpoint($desktop-med)
-			width: 296px
-			height: 179px
+			width: 205px
+			height: 145px
+			margin-left: 100px
 
 		+breakpoint($tablet-mod)
-			width: 218px
-			height: 132px
-
-		+breakpoint($tablet-mor)
-			width: 171px
-			height: 104px
-
-		+breakpoint($tablet-dubs2)
 			width: 100%
-			height: auto
-			margin-top: -1px
+			height: 132px
+			margin-top: 230px
+			margin-left: 0
+
+		
 
 		img
 			width: 100%

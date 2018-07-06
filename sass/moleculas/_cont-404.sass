@@ -6,6 +6,9 @@
 	padding-bottom: 335px
 	margin-top: 65px
 
+	+breakpoint($tablet-mod)
+		padding-bottom: 450px
+
 	.error404
 		+clearfix
 
@@ -30,6 +33,9 @@
 				font-size: 30px
 				text-align: center
 
+				+breakpoint($desktop-med)
+					font-size: 25px
+
 		.info
 
 			p 
@@ -37,6 +43,9 @@
 				color: $preto
 				font-size: 20px
 				text-align: center
+
+				+breakpoint($desktop-med)
+					font-size: 17px
 
 		.barra-busca
 			width: 100%
@@ -72,10 +81,10 @@
 				position: absolute
 
 				+breakpoint($desktop-med)
-					margin-left: -1px
+					margin-left: 12px
 
 				+breakpoint($tablet-mod)
-					margin-left: 2%
+					margin-left: 15px
 
 				+breakpoint($tablet-mor)
 					margin-left: 1%
