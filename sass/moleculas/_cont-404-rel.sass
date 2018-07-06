@@ -1,16 +1,15 @@
 .relacionados
-	margin-top: 50px
+	margin-top: 25px
 	width: 100%
 	justify-content: center
 
-	h2
-		font-size: 34px
-		font-family: Raleway
-		color: $marrom
-		text-align: center
 
-		+breakpoint($desktop-med)
-			font-size: 30px
+
+	h2
+		font-size: 30px
+		font-family: Raleway
+		text-align: center
+		color: $marrom
 
 		+breakpoint($tablet-mod)
 			font-size: 25px
@@ -18,52 +17,49 @@
 		+breakpoint($tablet-mor)
 			font-size: 22px
 
-.posts
-	+flexbox
-	//background-color: $dourado
-	justify-content: space-between
-	margin-left: -10px
-	margin-top: 10px
 
-	+breakpoint($desktop-med)
-		justify-content: center
-		margin-left: -115px
+	.posts
 
-	+breakpoint($tablet-mod)
-		display: block
-		margin-top: -220px
-		margin-left: 55px
+		//background-color: $dourado
+		+flexbox
+		justify-content: space-around
+		flex-direction: row
+		flex-wrap: wrap
 
+		+breakpoint($tablet-mor)
+			flex-direction: column
+			align-items: center
+	
+	
 
 
 
 	.fotopr-1
 
-		width: 225px
-		height: 159px
+		width: 351px
+		height: 212px
 		margin-top: 5px
 		position: relative
-		display: block
 		//background-color: $dourado
 
 		+breakpoint($desktop-med)
-			width: 205px
-			height: 145px
-			margin-left: 100px
+			width: 296px
+			height: 179px
 
 		+breakpoint($tablet-mod)
-			width: 100%
+			width: 218px
 			height: 132px
-			margin-top: 230px
-			margin-left: 0
 
-		
+		+breakpoint($tablet-mor)
+			width: 100%
+			height: auto
+	
+	
 
 		img
 			width: 100%
 			height: auto
 			position: relative
-
 	h3
 		font-family: Raleway
 		font-size: 20px
@@ -75,31 +71,3 @@
 
 		+breakpoint($tablet-dubs2)
 			font-size: 25px
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
