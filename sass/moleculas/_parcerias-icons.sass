@@ -12,14 +12,17 @@
 	margin-top: 35px
 
 	+breakpoint($tablet-mor)
-		width: 70%
-		margin-left: 13%
+		width: 100%
+		//margin-left: 13%
 
 	+breakpoint($tablet-dubs2)
 		width: 100%
 		margin-left: 0
 
 	.imagem
+
+		+breakpoint($tablet-dubs2)
+			margin-top: -35px
 		
 		//background-color: #452
 
@@ -29,6 +32,9 @@
 
 	.imagem-2
 		margin-top: -16px
+
+		+breakpoint($tablet-dubs2)
+			margin-top: 5px
 		
 		//background-color: #452
 
@@ -39,6 +45,9 @@
 	.imagem-3
 
 		margin-top: -16px
+
+		+breakpoint($tablet-dubs2)
+			margin-top: 5px
 		
 		//background-color: #452
 
