@@ -7,12 +7,12 @@
 	ul
 		
 		+flexbox
-		+clearfix
-		+make-row
+
 		flex-direction: row       
 		justify-content: space-between
 		align-content: space-between
 		align-items: stretch
+		margin-top: 3px
 
 		+breakpoint($desktop-med)
 			flex-direction: column
@@ -20,7 +20,7 @@
 			justify-content: center
 			align-items: center		
 			margin-top: -15px
-		
+
 		li
 			width: 350px 
 			height: 245px 
@@ -42,6 +42,7 @@
 			+breakpoint($smartphone-mud2)
 				width: 295px
 				height: 206px
+
 
 			&:hover
 				transform: scale(1.1)
