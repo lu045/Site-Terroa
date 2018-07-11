@@ -1,17 +1,27 @@
-.portifolio-resumo
+.portifolio-res
 	margin-top: 3px
 	width: 100%
 	height: 400px
 	+clearfix
+	positiom: relative
+	height: 100%
+
+
+	a
+		text-decoration: none
+		position: relative
+		cursor: pointer
+		overflow: hidden
+
 	
 	ul
 		
 		+flexbox
-
 		flex-direction: row       
 		justify-content: space-between
 		align-content: space-between
 		align-items: stretch
+		cursor: pointer
 		margin-top: 3px
 
 		+breakpoint($desktop-med)
@@ -54,12 +64,15 @@
 
 				position: relative
 				width: 100%
-				height: auto
+				hright: auto
+				
 
 				.filtro
 					
 					background-color: rgba(0,0,0,0.3)
 					position: absolute
+					cursor: pointer
+					overflow: hidden
 					width: 100%
 					height: 245px
 					+transition(.5s)
