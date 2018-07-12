@@ -1,14 +1,29 @@
-@import moleculas/mixins
+/*Arquivos da pagina parcerias do site, feito utilizando o conceito de design atomico*/
+/*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
+/*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/ 
 
+
+/*Media queries e mixins da pagina*/
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
+
+/*Variaveis do bootstrap*/
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
 
+/*Mixin do flexbox*/
+@import ../bower_components/sass-flex-mixin/flex
+
+/*Mixins especificos da pagina*/
+@import moleculas/mixins
+/*Estrutura base da pagina*/
 @import templates/parcerias
-@import atomos/bgpages
+/*Area de conteudo da pagina*/
 @import moleculas/cont-parcerias
+/*Tamanho dos botoes desta pagina*/
 @import moleculas/botoesdeenviar
+/*Base do botao enviar*/
 @import atomos/enviar
+/*Estrutura do formulario*/
 @import moleculas/formulario-parcerias
 
 
@@ -16,5 +31,5 @@
 
 
 
-@import ../bower_components/sass-flex-mixin/flex
+
 

@@ -1,49 +1,52 @@
-//mixins
-@import moleculas/mixins
+/*Arquivos de estilos da pagina inicial, feito utilizando o conceito de design atomico*/ 
+/*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
+/*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/                                                
 
-//variaveis e mixins
+/*Variaveis e mixins da pagina*/
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
 
-//breakpoint
+/*Breakpoint*/
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
 
-//estrutura base da pagina
+/*Mixin do flexbox*/
+@import ../bower_components/sass-flex-mixin/flex
+
+
+/*Mixins especificos da pagina*/
+@import moleculas/mixins
+/*estrutura base da pagina*/
 @import templates/home
-//area da pagina
+/*area da pagina e altura*/
 @import moleculas/area-home
-//area do resumo do blog
+/*area do resumo do blog*/
 @import moleculas/area-blog-h
-//area de e-mail marketring
+/*area de e-mail marketring*/
 @import moleculas/arealeeds
-//area do formulario para e-mail marketinbg
+/*area do formulario para e-mail marketing*/
 @import moleculas/formulario-home
-//area dos icones para resumo de parcerias
+/*area dos icones para resumo de parcerias*/
 @import moleculas/parcerias-icons
-//botao de enviar
+/*botao de enviar*/
 @import atomos/enviar
-//fundo da pagina
-@import atomos/bgpages
-//botao de saiba mais
+/*botao de saiba mais*/
 @import atomos/botao-saiba
-//botao de blog
+/*botao de blog*/
 @import atomos/botao-blog
-//botao de parcerias
+/*botao de parcerias*/
 @import atomos/botao-parcerias-home
-//textos da pagina
+/*textos da pagina*/
 @import atomos/text-home
-//textos da area de parcerias
+/*textos da area de parcerias*/
 @import atomos/text-parcerias-home
 //modelos do botao de enviar
 @import moleculas/botoesdeenviar
-//tags de status
+/*tags de status*/
 @import moleculas/tags
-//tags da pagina inicial
+/*tags com tamanhos especificos para a pagina inicial*/
 @import moleculas/tags-home
 //quadros do portifolio
 @import moleculas/portfolio-home
-//area de slide
+/*area de slide*/
 @import organismos/slider-home
 
-//mixin do flexbox
-@import ../bower_components/sass-flex-mixin/flex
