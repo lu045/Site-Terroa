@@ -1,5 +1,5 @@
 @mixin transition($transition...) {
-  @if $enable-transitions {
+  //@if $enable-transitions {
     @if length($transition) == 0 {
       transition: $transition-base;
     } @else {
@@ -7,7 +7,7 @@
     }
   }
 
-  @media screen and (prefers-reduced-motion: reduce) {
-    transition: none;
-  }
-}
+  //@media screen and (prefers-reduced-motion: reduce) {
+    //transition: none;
+  //}
+//}
