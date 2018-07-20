@@ -1,3 +1,4 @@
+/*Estilo do formulario utilizado na pagina de contato*/
 form
 	+clearfix
 	+make-row
@@ -5,6 +6,7 @@ form
 	width: 100%
 
 
+	/*Campos do Formulario*/
 	.campos
 		+flexbox
 		+clearfix
@@ -14,6 +16,7 @@ form
 		position: relative
 	
 	
+		/*Especificaçoes dos campos de input*/
 		input
 			height: 30px
 			width: 100%	
@@ -22,6 +25,7 @@ form
 			border: 100% solid $marrom
 
 
+		/*Especificaçoes das areas de texto*/
 		textarea
 			height: 210px
 			width: 100%
@@ -30,6 +34,7 @@ form
 			+placeholder($marrom)
 
 
+		/*Especificaçoes dos campos de select*/
 		select
 			color: $marrom
 			option: checked
@@ -39,22 +44,26 @@ form
 			background: $branco
 
 
-
+	/*Atribuiçoes do estilo interno de cada item de preenchimento*/
 	.item
 		width: 100%
 		font-family: Open Sans
 		font-size: 18px
 		color: $marrom
 
+		/*Efeito de Cursor*/
 		&:hover
 			outline: solid 2px $dourado
 
+		/*Efeito de Clique*/
 		&:focus
 			outline: solid 2px $vinho
 	
 
+	/*Atribuiçoes especificas do botão enviar*/
 	button
 
+		/*Media Queries*/
 		+breakpoint($tablet-ms)
 			margin: 0 0 0 0
 			width: 100%

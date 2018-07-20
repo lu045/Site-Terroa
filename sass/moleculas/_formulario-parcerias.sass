@@ -1,15 +1,18 @@
+/*Estilo do formulario utilizado na pagina de parcerias*/
 form
 
 	+clearfix
 	+make-row
 	position: relative
 
+	/*Campos do Formulario*/
 	.campos
 		+flexbox
 		flex-direction: column
 		flex-wrap: wrap
 		width: 100%
 
+		/*Titulo de Campo*/
 		h2
 			font-family: Raleway
 			text-transform: uppercase
@@ -17,11 +20,13 @@ form
 			font-size: 25px
 	
 
+		/*Especificaçoes dos campos de input*/
 		input
 			height: 30px
 			width: 100%
 			+placeholder($marrom)
 
+		/*Especificaçoes das areas de texto*/
 		textarea
 			height: 210px
 			width: 100%
@@ -29,26 +34,32 @@ form
 			+placeholder($marrom)
 			margin-top: 15px
 
+		/*Especificaçoes dos campos de select*/
 		select
 			background-color: $branco
 
 
 
+	/*Atribuiçoes do estilo interno de cada item de preenchimento*/
 	.item
 		width: 100%
 		font-family: Open Sans
 		font-size: 18px
 		color: $marrom
 
+		/*Efeito de Cursor*/
 		&:hover
 			outline: solid 2px $dourado
 
+		/*Efeito de Clique*/
 		&:focus
 			outline: solid 2px $vinho
 
 
+	/*Atribuiçoes especificas do botão enviar*/
 	button
-
+		
+		/*Media Queries*/
 		+breakpoint($tablet-ms)
 			margin: 0 0 0 0
 			width: 100%

@@ -1,3 +1,5 @@
+/*Estilo dos avatares de perfis utilizado na pagina empreendimentos*/
+/*Area Geral do Perfil de Cada Empreendimento*/
 .perfil
 	background-color: $cinza-claro
 	height: 580px
@@ -8,6 +10,7 @@
 	+transition(.6s)
 	margin-top: 30px
 
+	/*Media Queries*/
 	+breakpoint($desktop-med)
 		height: 530px
 
@@ -22,9 +25,11 @@
 		padding-bottom: 28px
 		postion: relative
 
+	/*Efeito de Cursor*/
 	&:hover
 		background-color: $cinza-escuro
 
+	/*Imagem do Logo do Empreendimento*/
 	.foto-e
 			
 		img
@@ -32,10 +37,12 @@
 			width: 100%
 			+transition(.6s)
 
+			/*Efeito de Cursor*/
 			&:hover
 			  opacity: 0.6
 		 	  filter: alpha(opacity=60)
 
+	/*Informaçoes Destacadas dos Empreendimentos*/
 	.especificacoes
 
 		margin-top: 10px
@@ -48,6 +55,7 @@
 				color: $marrom
 				+transition(.5s)
 
+				/*Media Queries*/
 				+breakpoint($tablet-mod)
 					font-size: 23px
 
@@ -63,10 +71,12 @@
 				+breakpoint($smartphone-tud3)
 					font-size: 18px
 
+				/*Efeito de Cursor*/
 				&:hover
 					transform: scale(1.2)
 					color: $branco
 
+					/*Media Queries*/
 					+breakpoint($desktop-med)
 						transform: scale(1.0)
 						color: $marrom

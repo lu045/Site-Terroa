@@ -1,3 +1,5 @@
+/*Botão utilizado no blog para ação*/
+/*Area do Botão*/
 .botao-b
 	justify-content: center
 	align-items: center
@@ -5,9 +7,11 @@
 	+flexbox
 	margin-top: 20px
 	
+	/*Media Queries*/
 	+breakpoint($tablet-mod)
 		margin-top: 35px
 		
+	/*Estilização do Botão*/
 	button
 		width: 280px
 		height: 59px
@@ -21,6 +25,7 @@
 		+transition(.5s)
 		overflow: hidden
 
+		/*Media Queries*/
 		+breakpoint($tablet-mod)
 			width: 238px
 			height: 50px
@@ -29,11 +34,12 @@
 			width: 190px
 			height: 40px
 			
+		/*Efeito de Cursor*/
 		&:hover
 		  background-color: $marrom
 		  color: $branco
-
 		  
+		/*Texto do Botão*/
 		h2
 			font-family: Raleway
 			text-transform: uppercase
@@ -41,6 +47,7 @@
 			margin-top: 7px
 			text-align: center
 
+			/*Media Queries*/
 			+breakpoint($tablet-mod)
 				font-size: 23px
 				margin-top: 6px

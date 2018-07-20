@@ -1,10 +1,12 @@
 /*Botão utilizado na pagina especifica dos empreendimentos para descrever o interesse no projeto e abrir o modal com o formulario*/
 
+/*Area do Botão*/
 .botao-act
 	+flexbox
 	justify-content: center
 	margin-top: 30px
 
+	/*Estilo do Botão*/
 	button
 		background-color: transparent
 		border: 5px solid $marrom
@@ -16,10 +18,12 @@
 		cursor: pointer
 		+transition(.5s)
 
+		/*Efeito de Cursor*/
 		&:hover
 			background-color: $marrom
 			color: $branco
 
+		/*Texto do Botão*/
 		h2
 			font-family: Raleway			
 			text-transform: uppercase

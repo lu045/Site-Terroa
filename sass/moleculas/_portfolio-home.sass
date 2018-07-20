@@ -1,3 +1,4 @@
+/*Imagens dos empreendimentos destacados na pagina inicial*/
 .portifolio-res
 	margin-top: 3px
 	width: 100%
@@ -6,7 +7,7 @@
 	positiom: relative
 	height: 100%
 
-
+	/*estilo dos icones de ancora*/
 	a
 		text-decoration: none
 		position: relative
@@ -14,6 +15,7 @@
 		overflow: hidden
 
 	
+	/*Lista dos Empreendimentos*/
 	ul
 		
 		+flexbox
@@ -24,6 +26,7 @@
 		cursor: pointer
 		margin-top: 3px
 
+		/*Media Queries*/
 		+breakpoint($desktop-med)
 			flex-direction: column
 			position: relative
@@ -31,11 +34,13 @@
 			align-items: center		
 			margin-top: -15px
 
+		/*Area Individual de Cada Empreendimento*/
 		li
 			width: 350px 
 			height: 245px 
 			+transition(.5s)
 
+			/*Media Queries*/
 			+breakpoint($desktop-med)
 				width: 540px
 				height: 378px
@@ -54,12 +59,15 @@
 				height: 206px
 
 
+			/*Efeito de Cursor*/
 			&:hover
 				transform: scale(1.1)
 
+				/*Media Queries*/
 				+breakpoint($desktop-med)
 					transform: scale(1.0)
 
+			/*Area das Imagens de Cada Empreendimento*/
 			figure
 
 				position: relative
@@ -67,6 +75,7 @@
 				hright: auto
 				
 
+				/*Efeito de Sobreposição de Imagens*/
 				.filtro
 					
 					background-color: rgba(0,0,0,0.3)
@@ -77,6 +86,7 @@
 					height: 245px
 					+transition(.5s)
 
+					/*Media Queries*/
 					+breakpoint($desktop-med)
 						height: 378px
 
@@ -92,10 +102,12 @@
 					&:hover
 						background-color: rgba(0,0,0,0.6)
 				
+				/*Propriedade das Imagens*/
 				img
 					width: 100%
 					height: auto
 
+				/*Descrição de Cada Empreendimento*/
 				figcaption
 
 					margin-top: -170px
@@ -105,6 +117,7 @@
 					position: relative
 					+transition(.5s)
 
+					/*Media Queries*/
 					+breakpoint($desktop-med)
 						margin-top: -250px
 
@@ -117,18 +130,22 @@
 					+breakpoint($smartphone-mud2)
 						margin-top: -160px
 
+					/*Efeito de Cursor*/
 					&:hover
 						transform: scale(1.2)
 
+						/*Media Queries*/
 						+breakpoint($desktop-med)
 							transform: scale(1.0)
 
+					/*Nome do Empreendimento*/
 					h2
 						font-family: Raleway
 						color: $branco
 						text-transform: uppercase
 						font-size: 20px
 
+						/*Media Queries*/
 						+breakpoint($desktop-med)
 							font-size: 30px
 
@@ -141,11 +158,13 @@
 						+breakpoint($smartphone-mud2)
 							font-size: 20px
 
+					/*Cidade do Empreendimento*/
 					p 
 						font-family: Raleway
 						color: $branco
 						font-size: 20px
 
+						/*Media Queries*/
 						+breakpoint($desktop-med)
 							font-size: 23px
 

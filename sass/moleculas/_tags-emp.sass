@@ -1,5 +1,6 @@
 /*Area das tags de status para as obras relacionadas nas paginas especificas dos empreendimentos*/
 
+/*Alinhamento Geral da Tag*/
 .tag
 	+flexbox
 	justify-content: center
@@ -8,6 +9,7 @@
 	.tagemp
 		position: relative
 
+	/*Tag de Pronto Para Morar*/
 	.ppm
 		border: 5px solid $verde-claro
 		border-radius: 3px
@@ -17,10 +19,12 @@
 		color: $verde-claro
 		+transition(.5s)
 
+		/*Efeito de Cursor*/
 		&:hover
 			background-color: $verde-claro
 			color: $branco
 
+		/*Texto da Tag*/
 		h2 
 			font-size: 30px
 			font-family: Raleway

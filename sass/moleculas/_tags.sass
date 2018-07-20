@@ -1,3 +1,6 @@
+/*Estilo das tags gerais usadas para definir o status das obras dos empreendimentos*/
+/*Alguns estilos especificos para a aplicação das tags em algumas paginas estão utilizando clases especificas editadas em outros arquivos*/
+/*Tag Pronto Para Morar*/
 .tag-g
 	justify-content: center
 	align-items: center
@@ -5,6 +8,7 @@
 	+clearfix
 	+flexbox
 
+	/*Texto da Tag*/
 	h2
 		font-size: Raleway
 		color: $branco
@@ -12,6 +16,7 @@
 		font-size: 40px
 		margin-top: 5px
 
+/*Tag Obras*/
 .tag-p
 	justify-content: center
 	align-items: center
@@ -19,6 +24,7 @@
 	+clearfix
 	+flexbox
 
+	/*Texto da Tag*/
 	h2
 		font-size: Raleway
 		color: $branco
@@ -26,6 +32,7 @@
 		font-size: 40px
 		margin-top: 5px
 
+		/*Media Queries*/
 		+breakpoint($desktop-med)
 			font-size: 35px
 
@@ -33,6 +40,7 @@
 			font-size: 28px
 			margin-top: 8px
 
+/*Tag Entregue*/
 .tag-e
 	justify-content: center
 	align-items: center
@@ -40,6 +48,7 @@
 	+clearfix
 	+flexbox
 
+	/*Texto da Tag*/
 	h2
 		font-size: Raleway
 		color: $branco
@@ -47,6 +56,7 @@
 		font-size: 40px
 		margin-top: 5px		
 
+/*Efeitos de complemento da Tag Obras*/
 .obras
 	width: 220px
 	height: 67px
@@ -54,10 +64,12 @@
 	border-radius: 10px
 	+transition(.5s)
 
+	/*Efeito de Cursor*/
 	&:hover
 		background-color: $dourado-dark
 		transform: scale(1.2)
 
+/*Efeitos de complemento da Tag Pronto Para Morar*/
 .pronto
 	width: 360px
 	height: 67px
@@ -65,10 +77,13 @@
 	border-radius: 10px
 	+transition(.5s)
 
+	/*Efeito de Cursor*/
 	&:hover
 		background-color: $verde-medio
 		transform: scale(1.2)
 
+
+/*Efeitos de complemento da Tag Entregue*/
 .entregue
 	width: 200px
 	height: 67px
@@ -76,6 +91,7 @@
 	border-radius: 10px
 	+transition(.5s)
 
+	/*Efeito de Cursor*/
 	&:hover
 		background-color: $verde-ultra
 		transform: scale(1.2)

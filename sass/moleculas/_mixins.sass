@@ -1,3 +1,4 @@
+/*Arquivo dos mixins utilizados nos estilos das paginas*/
 /* ======== Cores ========*/
 /*Gerais*/
 $preto: #000
@@ -25,10 +26,8 @@ $vinho-blog: #772529
 /*Condomínio Imperial */
 $azul-imperial: #0069A5
 
-
-
-/* ======== Resolução */
-
+/*Media Queries*/
+/*========Resolução======== */
 $smart-tv: max-width 2560px
 $desktop-ext: max-width 1920px
 $laptop: max-width 1440px
@@ -145,6 +144,7 @@ $smartphone-tod: max-width 325px
 $smartphone: max-width 320px
 $smartphone-mini: max-width 240px
 
+/*========Flexbox========*/
 =flexbox
   display: -webkit-box
   display: -webkit-flex
@@ -152,7 +152,7 @@ $smartphone-mini: max-width 240px
   display: -ms-flexbox
   display: flex
 
-  /* ======== Columns */
+/*========Colunas========*/
 =columns($count: 3, $gap: 10) 
   @include css3-prefix('column-count', $count)
   @include css3-prefix('column-gap', $gap)

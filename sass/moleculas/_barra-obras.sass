@@ -1,23 +1,26 @@
+/*Altura geral da area de status das obras nas paginas especificas dos empreendimentos*/
 .status
 
+	/*Altura das listas com as etapas das dobras*/
 	ul
 		margin-top: -10px
 
-
-
-
+	/*Formula que gera o dinamismo na barra de progresso*/
 	@for $i from 0 through 100
 		li.statu-#{$i}
 			.barra span
 				width: 1% * $i
 	
+	/*Edçoes especificas das listas de obras*/
 	li
+		/*Textos de cada etapa das obras*/
 		h2
 			font-family: Open Sans
 			font-size: 25px
 			color: $preto
 			margin-top: 3px
 	
+	/*Estilo da barra de progresso*/
 	.barra
 		background-color: $branco
 		border: 3px solid $preto
@@ -27,9 +30,10 @@
 		height: 32px
 		margin-top: 10px
 
+		/*Barra que fica dentro da barra de progresso simulando a porcentagem real de cada etapa*/
 		span
 			background-color: $vinho
 			border-radius: 1px
 			height: 100%
 			display: block
-
+			

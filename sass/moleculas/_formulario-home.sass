@@ -1,3 +1,4 @@
+/*Estilo do formulario utilizado na pagina inicial*/
 .formulario
 
 	+clearfix
@@ -5,6 +6,7 @@
 	flex-direction: row
 	flex-wrap: wrap
 
+	/*Media Queries*/
 	+breakpoint($desktop-med)
 		flex-direction: column
 		justify-content: center
@@ -12,14 +14,17 @@
 		margin-top: -20px
 
 		
+	/*Atribuiçoes do estilo interno de cada item de preenchimento*/
 	.item		
 		margin: -10px 15px 0 0
 		+placeholder($marrom)
 
+		/*Media Queries*/
 		+breakpoint($desktop-med)
 			margin: 10px 15px 0 0
 
 
+	/*Formataçoes especificas do campo de nome*/
 	.cname
 		
 		width: 44%
@@ -29,16 +34,20 @@
 		font-size: 18px
 		color: $marrom
 
+		/*Efeito de Cursor*/
 		&:hover
 			outline: solid 2px $marrom
 
+		/*Efeito de Clique*/
 		&:focus
 			outline: solid 2px $vinho-tinto
 
+		/*Media Queries*/
 		+breakpoint($desktop-med)
 			width: 100%
 
 		
+	/*Formataçoes especificas do campo de e-mail*/
 	.cemail
 
 		width: 44%
@@ -49,12 +58,15 @@
 		color: $marrom
 		+placeholder($marrom)
 		
+		/*Efeito de Cursor*/
 		&:hover
 			outline: solid 2px $marrom
 
+		/*Efeito de Clique*/
 		&:focus
 			outline: solid 2px $vinho-tinto
 
+		/*Media Queries*/
 		+breakpoint($desktop-med)
 			width: 100%
 
