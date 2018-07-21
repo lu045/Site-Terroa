@@ -2,6 +2,8 @@
 /*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
 /*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/
 
+/*======== Mixins e Frameworks Externos ========*/
+
 /*Media queries e mixins da pagina*/
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
@@ -12,21 +14,33 @@
 /*Mixin do flexbox*/
 @import ../bower_components/sass-flex-mixin/flex
 
+
+/*======== Arquivos de Estilização Interna ========*/
+
+/*======== Arquivos de Mixins Utilizados ========*/
+
 /*Mixins especificos da pagina*/
 @import moleculas/mixins
-/*Estrutura base da pagina*/
-@import templates/single
-/*formatação base do modelo de post*/
-@import organismos/post-single
-/*Area de conteudo da pagina*/
-@import organismos/cont-single
+
+/*======== Moleculas ========*/
+
 /*Botoes de Compartilhamento*/
 @import moleculas/botoes-comp
 
+/*Barras de buscas e categorias do blog*/
+@import moleculas/barra-bc-blog
 
+/*======== Organismos ========*/
 
+/*formatação base do modelo de post*/
+@import organismos/post-single
 
+/*Area de conteudo da pagina*/
+@import organismos/cont-single
 
+/*======== Templates ========*/
 
+/*Estrutura base da pagina*/
+@import templates/single
 
-
+/*A junção destes arquivos constituem esta page(pagina) que forma toda a estilização site compilada no css*/

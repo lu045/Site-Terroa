@@ -2,6 +2,8 @@
 /*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
 /*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/                                                
 
+/*======== Mixins e Frameworks Externos ========*/
+
 /*Variaveis e mixins da pagina*/
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
@@ -12,27 +14,53 @@
 /*Mixin do flexbox*/
 @import ../bower_components/sass-flex-mixin/flex
 
+
+/*======== Arquivos de Estilização Interna ========*/
+
+/*======== Arquivos de Mixins Utilizados ========*/
+
 /*Mixins especificos da pagina*/
 @import moleculas/mixins
-/*Mixins especificos da pagina*/
-@import moleculas/tags-emp
-/*estrutura base da pagina*/
-@import templates/empreendimento
-/*Area da pagina e itens de base*/
-@import organismos/sobre-emp
-/*Botoes de Compartilhamento*/
-@import moleculas/botoes-comp
-/*Area de atributos adcionais dos empreendimentos*/
-@import moleculas/atributos-adcionais
-/*Barra com o progresso das obras nas paginas especificas dos empreendimentos*/
-@import moleculas/barra-obras
-/*Area de estilização das galerias de imagens*/
-@import organismos/galerias-de-imagem
-/*Area da sessão de urbanistico/planta das paginas especificas dos empreendimentos*/
-@import organismos/urbanistico
-/*Area sessão de localização das paginas especificas dos empreendimentos*/
-@import organismos/localizacao
-/*Area sessão de localização das paginas especificas dos empreendimentos*/
-@import organismos/obras
+
+/*======== Atomos ========*/
+
 /*Botão de ação para demonstrar interesse no empreendimento*/
 @import atomos/botao-interesse
+
+/*======== Moleculas ========*/
+
+/*Mixins especificos da pagina*/
+@import moleculas/tags-emp
+
+/*Botoes de Compartilhamento*/
+@import moleculas/botoes-comp
+
+/*Area de atributos adcionais dos empreendimentos*/
+@import moleculas/atributos-adcionais
+
+/*Barra com o progresso das obras nas paginas especificas dos empreendimentos*/
+@import moleculas/barra-obras
+
+/*======== Organismos ========*/
+
+/*Area da pagina e itens de base*/
+@import organismos/sobre-emp
+
+/*Area de estilização das galerias de imagens*/
+@import organismos/galerias-de-imagem
+
+/*Area da sessão de urbanistico/planta das paginas especificas dos empreendimentos*/
+@import organismos/urbanistico
+
+/*Area sessão de localização das paginas especificas dos empreendimentos*/
+@import organismos/localizacao
+
+/*Area sessão de localização das paginas especificas dos empreendimentos*/
+@import organismos/obras
+
+/*======== Templates ========*/
+
+/*estrutura base da pagina*/
+@import templates/empreendimento
+
+/*A junção destes arquivos constituem esta page(pagina) que forma toda a estilização site compilada no css*/

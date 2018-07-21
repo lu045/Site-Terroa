@@ -1,4 +1,8 @@
+/*Estilização do menu-responsivo contido nas paginas do site apenas visivel em alguns dispositivos*/
+/*A função JavaScript do menu responsivo esta localizada na pasta js com o nome de menu-responsivo.js*/
+/*Area do menu responsivo*/
 .responsive
+	/*Area de listagem do menu responsivo*/
 	ul
 	 width: 100%
 	 height: 100%
@@ -9,18 +13,23 @@
 	 display: none
 	 +clearfix
 
+	 /*Efeito para aplicação da função no JavaScript*/
 	 &.active
 		 display: none
 
+		 /*Media Queries*/
 		 +breakpoint($tablet2)
 		 	display: block
 		
-	
+	/*Formatação de cada item em especifico do menu*/
 	li
 	 text-align: center
+	
+	 /*Efeito de Cursor*/
 	 &:hover
 		 background-color: rgba(202,169,119,.5) 
 	
+		/*Formatação de icones de ancoragem*/
 		a
 			font-size: 18px
 			font-family: Raleway

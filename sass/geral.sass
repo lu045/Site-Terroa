@@ -2,35 +2,50 @@
 /*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
 /*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/   
 
+/*======== Mixins e Frameworks Externos ========*/
+
 /*Midia queries, variaveis e mixins do bootstrap*/
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
 
-
-
-
 /*Grid e arquivos de flexbox*/
 @import ../bower_components/sass-flex-mixin/flex
 @import ../node_modules/flexbox/scss/grid
 
+
+/*======== Arquivos de Estilização Interna ========*/
+
+/*======== Arquivos de Mixins Utilizados ========*/
 /*Mixins especificos da pagina*/
 @import moleculas/mixins
-/*Estilo do rodape*/
-@import organismos/footer
-/*Estilo do header*/
-@import organismos/header
-/*Estilo do menu responsivo*/
-@import organismos/menu-responsivo
-/*Estilo do botão de menu responsivo*/
-@import atomos/botao-toggle
-/*Posição do conteudo de pagina*/
-@import organismos/conteudo
+
+/*======== Atomos ========*/
+
 /* Corpo do site */
 @import atomos/corpo
-/*Arquivo de reset*/
-@import moleculas/reset
+
+/*Estilo do botão de menu responsivo*/
+@import atomos/botao-toggle
+
 /*Fundo da pagina*/
 @import atomos/bgpages
 
+/*======== Moleculas ========*/
 
+/*Arquivo de reset*/
+@import moleculas/reset
+
+/*======== Organismos ========*/
+
+/*Estilo do rodape*/
+@import organismos/footer
+
+/*Estilo do header*/
+@import organismos/header
+
+/*Estilo do menu responsivo*/
+@import organismos/menu-responsivo
+
+/*Posição do conteudo de pagina*/
+@import organismos/conteudo

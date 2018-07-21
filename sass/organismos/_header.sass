@@ -1,3 +1,5 @@
+/*Estilização do cabeçalho contido nas paginas do site*/
+/*Area do Cabeçalho*/
 header
  +clearfix
  +flexbox
@@ -12,16 +14,18 @@ header
  height: 150px
  position: relative
 
-
-
+ /*Media Queries*/
  +breakpoint($smartphone-med3)
  	height: 108px
 
+	/*Logo da Terroá Empreendimentos*/
 	.logo
 		float: left
 		width: 255px
 		height: 115px
 		margin: 15px 0 0
+		
+        /*Media Queries*/
 		+breakpoint($tablet)
 			float: none
 
@@ -30,35 +34,43 @@ header
 			height: 88px
 			margin: 10px 0 0
 		
+	/*Area do Menu do Site*/
 	.menu
 		float: right
 		margin: 112px -18px 0
 		+flexbox
 		align-items(flex-start)
 		justify-content(space-around)
+		
+        /*Media Queries*/
 		+breakpoint($tablet)
 			margin: -18px -18px 0
 
 		+breakpoint($tablet2)
 			display: none
-
 		
+		/*Area de Navegação*/
 		nav
 
+			/*Lista do Menu*/
 			ul
+				/*Formatação de cada elemento da lista*/
 				li
 					display: inline-block
 					margin: 0 12px 0 0
 
+					/*Formatação dos icones de ancoragem*/
 					a
 						font-family: Open Sans
 						text-transform: uppercase
 						color: $marrom
 						+transition(.5s)
 
+						/*Efeito de Cursor*/
 						&:hover
 							color: $dourado
 
+						/*Efeito de Clique*/
 						&:focus
 		                  color: $vinho-tinto
 

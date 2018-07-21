@@ -1,7 +1,11 @@
+/*Area com as 2 postagens em destaque do blog na pagina inicial*/
+/*O botão desta area esta editado no arquivo _botao-blog.sass localizado na pasta atomos*/
+/*Altura e espaçamento da area*/
 .area-blog
 
 	margin-top: 25px
 
+	/*Media Queries*/
 	+breakpoint($desktop-med)
 		margin-top: 3%
 
@@ -17,10 +21,13 @@
 	+breakpoint($smartphone-mud2)
 		margin-top: 20px
 
+	/*Area especifica do blog*/
 	.blog-resumo
 
+		/*Cabeçalho do Blog*/
 		.cabecalho-pg
 
+			/*Titulo Especifico d eCabeçalho*/
 			h1
 				font-family: Raleway
 				font-size: 35px
@@ -28,23 +35,28 @@
 				color: $marrom
 				text-align: center
 
+		/*Posts do Blog*/
 		.post-resumos
 
 			margin-top: 15px
 
+			/*Foto do Post*/
 			.foto-post
 
 				margin-top: 10px
 
+				/*Altura e Largura da Foto Especifica do Post*/
 				img
 					width: 100%
 					height: auto
 
 
+			/*Post*/
 			article
 
 				margin-top: 10px
 
+				/*Titulo do Post*/
 				h1
 					font-family: Raleway
 					font-size: 35px
@@ -52,6 +64,7 @@
 					text-align: center
 					margin-top: 10px
 
+				/*Paragrafo do Post*/
 				p
 					font-family: Open Sans
 					font-size: 25px
