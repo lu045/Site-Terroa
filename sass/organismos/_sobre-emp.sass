@@ -7,6 +7,9 @@
 	position: relative
 	margin-top: 3px
 
+	+breakpoint($tablet2)
+		margin-top: 8px
+
 	/*Area de destaque da pagina*/
 	.capa
 		background-color: $vinho
@@ -23,12 +26,21 @@
 			display: block
 			margin-top: 5px
 
+			+breakpoint($tablet-mor)
+				display: none
+
 			/*Nome do Empreendimento*/
 			h1
 				font-family: Raleway
 				font-size: 33px
 				color: $branco 
 				text-transform: uppercase
+
+				+breakpoint($desktop-med)
+					font-size: 30px
+
+				+breakpoint($tablet-mod)
+					font-size: 20px
 			
 			/*Especificaçoes do Empreendimento*/
 			h2
@@ -37,17 +49,60 @@
 				font-family: Open Sans
 				color: $branco
 
+				+breakpoint($desktop-med)
+					font-size: 23px
+
+				+breakpoint($tablet-mod)
+					font-size: 18px
+
+		.info-resp
+			display: none
+			margin-top: 5px
+
+
+			+breakpoint($tablet-mor)
+				display: block
+
+			h1
+				font-family: Raleway
+				font-size: 30px
+				color: $branco 
+				text-transform: uppercase
+				text-align: center
+
+				+breakpoint($smartphone-deb)
+					font-size: 25px
+
+			h2
+				margin-top: -12px
+				font-size: 25px
+				font-family: Open Sans
+				text-align: center
+				color: $branco
+
+				+breakpoint($smartphone-deb)
+					font-size: 20px
+
         /*Localização dos empreendimentos*/
 		.cidade
 			+flexbox
 			margin-top: 12px
 			justify-content: center
 
+			+breakpoint($tablet-mor)
+				display: none
+
 
 			/*Icone de Mapa*/
 			i 
 				font-size: 50px
 				color: $branco
+
+				+breakpoint($desktop-med)
+					font-size: 45px
+
+				+breakpoint($tablet-mod)
+					font-size: 30px
 
 			/*Nome da Cidade*/
 			h1 
@@ -56,16 +111,62 @@
 				color: $branco
 				margin-top: 5px
 				margin-left: 20px
+
+				+breakpoint($desktop-med)
+					font-size: 30px
+
+				+breakpoint($tablet-mod)
+					font-size: 20px
+
+		.cidade-resp
+			+flexbox
+			margin-top: -5px
+			display: none
+
+			+breakpoint($tablet-mor)
+				+flexbox
+				justify-content: center
+
+			i 
+				font-size: 35px
+				color: $branco
+				text-align: center
+
+				+breakpoint($smartphone-deb)
+					font-size: 28px
+					margin-top: 3px
+		
+
+			h1
+				font-family: Raleway
+				font-size: 30px
+				color: $branco
+				text-align: center
+				margin-left: 15px
+
+				+breakpoint($smartphone-deb)
+					font-size: 25px
+
+			
 	
 	/*Menu de Navegação das Paginas de Empreendimentos*/
 	.menu-emp
 
 		margin-top: 30px
 
+		+breakpoint($tablet-mod)
+			margin-top: 10px
+
 		/*Listas de Menu*/
 		ul
 			+flexbox
 			justify-content: space-around
+
+			+breakpoint($tablet-mod)
+				flex-direction: column
+				align-content: space-around
+				
+
 
 			/*Itens de Menu*/
 			li 
@@ -75,8 +176,20 @@
 				text-transform: uppercase
 				font-size: 20px
 				font-family: Raleway
+				margin: 0 20px 0 0
 				padding: 5px
 				+transition(.3s)
+
+				+breakpoint($desktop-med)
+					margin: 0 0 0 0
+					padding: 3px
+					font-size: 18px
+
+				+breakpoint($tablet-mod)
+					width: 100%
+					margin-top: 15px
+					text-align: center
+					
 
 				/*Efeito de passar o cursor*/
 				&:hover
@@ -106,12 +219,22 @@
 			text-transform: uppercase
 			color: $marrom
 
+			+breakpoint($desktop-med)
+				font-size: 30px
+
+			+breakpoint($smartphone-deb)
+				font-size: 25px
+				text-align: center
+
 		/*Paragrafo de Artigo*/
 		p 
 			font-family: Open Sans
 			font-size: 25px
 			color: $preto
 			margin-top: 10px
+
+			+breakpoint($smartphone-deb)
+				font-size: 20px
 
 
 
