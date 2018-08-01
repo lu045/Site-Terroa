@@ -9,8 +9,8 @@
 	.tagemp
 		position: relative
 
-	/*Tag de Pronto Para Morar*/
-	.ppm
+	/*Tag de Pronto Para Construir*/
+	.ppc
 		border: 5px solid $verde-claro
 		border-radius: 3px
 		background-color: transparent
@@ -31,6 +31,53 @@
 			text-transform: uppercase
 			text-align: center
 			margin-top: 12px
+
+			+breakpoint($smartphone-aut)
+				font-size: 28px
+
+			+breakpoint($smartphone-int)
+				font-size: 25px
+
+			+breakpoint($smartphone-med)
+				font-size: 20px
+				margin-top: 16px
+
+	/*Tag de Pronto Para Morar*/
+	.ppm
+		border: 5px solid $verde-claro
+		border-radius: 3px
+		background-color: transparent
+		width: 349px
+		height: 68px
+		color: $verde-claro
+		+transition(.5s)
+
+		/*Efeito de Cursor*/
+		&:hover
+			background-color: $verde-claro
+			color: $branco
+
+		/*Texto da Tag*/
+		h2 
+			font-size: 30px
+			font-family: Raleway
+			text-transform: uppercase
+			text-align: center
+			margin-top: 12px
+
+			+breakpoint($smartphone-aut)
+				font-size: 28px
+
+			+breakpoint($smartphone-int)
+				font-size: 25px
+
+			+breakpoint($smartphone-med)
+				font-size: 20px
+				margin-top: 16px
+
+				
+
+				
 
 
 	

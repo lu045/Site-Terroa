@@ -18,6 +18,14 @@
 		cursor: pointer
 		+transition(.5s)
 
+		+breakpoint($tablet-mor)
+			width: 300px
+			height: 79px
+
+		+breakpoint($smartphone-deb)
+			width: 250px
+			height: 60px
+
 		/*Efeito de Cursor*/
 		&:hover
 			background-color: $marrom
@@ -30,3 +38,11 @@
 			font-size: 30px
 			text-align: center
 			margin-top: 3px
+
+			+breakpoint($tablet-mor)
+				font-size: 25px
+				margin-top: 5px
+
+			+breakpoint($smartphone-deb)
+				font-size: 20px
+				margin-top: 0
