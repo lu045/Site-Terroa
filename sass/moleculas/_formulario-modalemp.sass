@@ -8,6 +8,7 @@
 	justify-content: center
 	align-items: center
 	flex-direction: row
+	display: none
 
 
 	.form-modal
@@ -19,6 +20,32 @@
 		position: relative
 		padding: 15px 
 
+		+breakpoint($desktop-med)
+			margin-left: 250px
+
+		+breakpoint($tablet-mod)
+			margin-left: 18%
+
+		+breakpoint($tablet-mor)
+			margin-left: 5%
+
+		+breakpoint($tablet-ower2)
+			width: 83%
+			margin-left: 8%
+
+		+breakpoint($smartphone-lvsa)
+			height: 485px
+
+		+breakpoint($smartphone-deb2)
+			height: 510px
+
+		+breakpoint($smartphone-med4)
+			height: 540px
+
+		+breakpoint($smartphone-tuc)
+			height: 560px
+			
+
 
 		.close-form
 
@@ -29,6 +56,9 @@
 			color: $marrom
 			cursor: pointer
 
+			+breakpoint($smartphone-lvsa)
+				font-size: 33px
+
 			&:hover
 				color: $vinho
 
@@ -36,6 +66,9 @@
 			font-size: 17px
 			font-family: Open Sans
 			color: $preto
+
+			+breakpoint($smartphone-lvsa)
+				margin-top: 40px
 
 		h1
 			color: $marrom

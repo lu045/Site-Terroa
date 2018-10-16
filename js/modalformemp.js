@@ -1,4 +1,4 @@
-/*$(document).ready(function(){
+$(document).ready(function(){
 	$('.botao-act button').click(function(){
 		$('.bg-formmodal').css("display", "flex");		
 	});
@@ -6,11 +6,5 @@
 	$('.close-form').click(function(){
 		$('.bg-formmodal').css("display", "none");	
 	});
-
-	$('.bg-formmodal').click(function(){
-		$('.bg-formmodal').css("display", "none");
-
-	});
-
 	
-});*/
+});
