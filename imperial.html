@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">		
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/modalformemp.js"></script>
+	<script type="text/javascript" src="js/menuscrool.js"></script>
+	<script type="text/javascript" src="js/slidergalery.js"></script>
 	<script type="text/javascript" src="js/menu-responsivo.js"></script>
 </head>
 
@@ -142,29 +144,22 @@
 	         <div class="container">
 	         	 <!--Menu de navegação direta-->
 	             <div class="menu-emp">
+	             	 <div class="container">
 	         	     <nav>
-	         	         <ul>
-	         	 	         <a href="#">
-	         	 	             <li>Sobre o Empreendimento</li>
-	         	 	         </a>
-	         	 	         <a href="#">
-	         	 	             <li>Urbanistico</li>
-	         	 	         </a>
-	         	 	         <a href="#">
-	         	 	             <li>Galeria de Imagens</li>
-	         	 	         </a>
-	         	 	         <a href="#">
-	         	 	             <li>Localização</li>
-	         	 	         </a>
-	         	 	         <a href="#">
-	         	 	             <li>Status da Obra</li>
-	         	 	         </a>
+	         	         <ul>         	 	         
+	         	 	         <li class="sobemp">Sobre o Empreendimento</li>	         	 	        
+	         	 	         <li class="urbemp">Urbanistico</li>	         	 	        
+	         	 	         <li class="galemp">Galeria de Imagens</li>	         	 	       
+	         	 	         <li class="lolemp">Localização</li>	         	 	      
+	         	 	         <li class="obemp">Status da Obra</li>	         	 	        
 	         	         </ul>
 	         	     </nav>
+	         	     </div>
 	             </div>
 
 	             <!--Area de Especificaçoes-->	
 	             <section class="sobre">
+	             	 <div class="container">
 	         	     <h1>Sobre o Empreendimento</h1>
 	         	 
 	         	     <!--Foto de Post-->	
@@ -375,38 +370,64 @@
 	         	     	     </button>
 	         	     	 </a>
 	         	     </div>
+	         	     </div>
 	             </section>
 
 	             <!--Urbanistico/Planta do Empreendimento-->
 	             <section class="urbanistico">
-	             	 <h1>Urbanistico</h1>
+	             	 <div class="container">
+	             	     <h1>Urbanistico</h1>
 
-	             	 <!--Area de Urbanistico/Planta-->
-	             	 <div class="area-urb">
-	                     <img src="imagens/empreendimentos/urbanisticos-plantas/imperial/urb-imp.png">	             	 	
+	             	     <!--Area de Urbanistico/Planta-->
+	             	     <div class="area-urb">
+	                         <img src="imagens/empreendimentos/urbanisticos-plantas/imperial/urb-imp.png">	             	 	
+	             	     </div>
 	             	 </div>
-
 	             </section>
 
 	             <!--Galeria para Imegens-->
 	             <section class="galeria">
-	             	 <h1>Galeria de Imagens</h1>
-	             	 <!--Area da Galeria-->
+	             	 <div class="container">
+	             	     <h1>Galeria de Imagens</h1>
+
+	             	     <div class="slider">
+	             	     	 <div class="exibicao">
+	             	     	 	 <img class="ex" src="imagens/slider/slides-empreendimentos/galeria-de-imagens/imperial/i1.png">
+	             	     	 	 <div class="desc">Imagem 1</div>
+	             	     	 </div>
+
+	             	     	 <div class="miniaturas">
+	             	     	 	<img class="ex" src="imagens/slider/slides-empreendimentos/galeria-de-imagens/imperial/i1.png" alt="Imagem 1">
+	             	     	 	<img class="ex" src="imagens/slider/slides-empreendimentos/galeria-de-imagens/imperial/i2.png" alt="Imagem 1">
+	             	     	 	<img class="ex" src="imagens/slider/slides-empreendimentos/galeria-de-imagens/imperial/i3.png" alt="Imagem 1">
+	             	     	 	<img class="ex" src="imagens/slider/slides-empreendimentos/galeria-de-imagens/imperial/i4.png" alt="Imagem 1">
+	             	     	 	<img class="ex" src="imagens/slider/slides-empreendimentos/galeria-de-imagens/imperial/i1.png" alt="Imagem 1">
+	             	     	 </div>
+	             	     	 
+	             	     	 <div class="botoes-slid">
+	             	     	     <div class="next"><i class="fas fa-chevron-right"></i></div>
+	             	     	     <div class="prev"><i class="fas fa-chevron-right"></i></div>
+	             	     	 </div>
+	             	     </div>
+	             	 </div>	             	 
 	             		             	
 	             </section>
 
 	             <!--Mapa de Localização-->
 	             <section class="localizacao">
-	             	 <h1>Localização</h1>
+	             	 <div class="container">
+	             	     <h1>Localização</h1>
 
-	             	 <!--Area do mapa do Google-->
-	             	 <div class="area-galery local">
-	             	 	 <p>Area de Mapa do Google</p>
+	             	     <!--Area do mapa do Google-->
+	             	     <div class="area-galery local">
+	             	 	     <p>Area de Mapa do Google</p>
+	             	     </div>
 	             	 </div>	             	
 	             </section>
 
 	             <!--Status das Obras-->
 	             <section class="status-area">
+	             	 <div class="container">
 	             	 <h1>Status da Obra</h1>
 
 	             	 <!--Barras de progresso com as etapas da obra-->
@@ -610,6 +631,7 @@
 	             	     <div class="area-galery obraemp">
 	             	 	     <p>Area de Galeria</p>
 	             	     </div>
+	             	 </div>
 	             	 </div>
 	             </section>
 	         </div>	         
