@@ -20,18 +20,39 @@
 		
 
 		.desc
-			font-family: Open-Sans
-			font-size: 23px
+			
 			background: rgba(0,0,0,0.5)
 			width: 100%
-			height: 35px
-			position: absolute
-		
-			z-index: 101
-			color: #fff
+			height: 30px
+			position: absolute		
+			z-index: 101			
 			padding-left: 5px
 			padding-bottom: 5px
 			bottom: 18px
+
+			+breakpoint($tablet-mod)
+				height: 25px
+				bottom: 18px
+
+			+breakpoint($tablet-mor)
+				bottom: 18px
+				height: 24px
+
+			p 
+				font-family: Open-Sans
+				font-size: 23px
+				color: #fff
+				margin-top: -3px
+
+				+breakpoint($tablet-mod)
+					font-size: 20px
+					margin-top: -4px
+
+				+breakpoint($tablet-mor)
+					font-size: 18px
+					margin-top: -2px
+			
+
 
 	.miniaturas
 		+flexbox
@@ -50,8 +71,8 @@
 		.ex
 			margin-left: 3px
 			margin-top: 3px
-			width: 24%
-			height: 24%
+			width: 25%
+			height: 25%
 			cursor: pointer
 			position: relative
 			opacity: 0.5
@@ -70,6 +91,9 @@
 
 		+breakpoint($tablet-mod)
 			margin-top: -260px
+
+		+breakpoint($tablet-mor)
+			margin-top: -185px
 		
 
 
@@ -91,6 +115,10 @@
 			+breakpoint($tablet-mod)
 				margin-left: 610px
 
+			+breakpoint($tablet-mor)
+				margin-left: 438px
+				font-size: 40px
+
 	.prev
 		
 		position: relative
@@ -102,6 +130,9 @@
 			margin-left: 10px
 			color: #fff
 			transform: rotate(180deg)
+
+			+breakpoint($tablet-mor)
+				font-size: 40px
 
 
 
