@@ -1,10 +1,15 @@
 $(document).ready(function(){
-	$('.botao-act button').click(function(){
-		$('.bg-formmodal').css("display", "flex");		
+	$('.formmodal').hide()	
+	$('.mod-form').click(function(){
+		$('.formmodal').fadeIn("slow");		
 	});
 
 	$('.close-form').click(function(){
-		$('.bg-formmodal').css("display", "none");	
+		$('.formmodal').fadeOut("slow");
+	});
+
+	$('.bg-modal').click(function(){
+		$('.formmodal').fadeOut("slow");
 	});
 	
 });
