@@ -1,100 +1,140 @@
+.controls
+	top: -150px 
+	z-index: 108
+	position: relative
+	width: 100%
+	margin-top: -210px
+	display: none
 
-.slider
-	width: 100% !important
-	overflow: hidden !important
-	height: 925px !important
+	+breakpoint($tablet)
+		margin-top: -150px
 
-	.owl-carousel
-		z-index: 100 !important
+	+breakpoint($laptop)
+		display: block
 
-		div
-			img
-				width: 100%
-				height: auto
+	+breakpoint($tablet-mod)
+		display: none
+
+	.next
+		+flexbox
+		justify-content: flex-end
+		position: relative
+	
+
+
+		i 
+			font-size: 80px
+			color: $branco 
+
+			
+	.prev
+		+flexbox
+		justify-content: flex-start
+		position: relative
+		margin-top: -78px
+		
+
+		i 
+			font-size: 80px
+			color: $branco 
+			
+	
 
 .owl-dots
-	z-index: 108 !important
+	top: -50px !important
 	position: relative !important
 
-.controls
-	z-index: 108 !important
+
+
+.owl-carousel
+	overflow: hidden !important
 	position: relative !important
-	+flexbox 
-	justify-content: center
-	margin-top: -290px
-	margin-left: -1005px
+
+	+breakpoint($tablet2)
+		margin-top: 6px !important
+
+
+
+.item
+	position: relative !important
+
+	.description
+		+flexbox
+		justify-content: center
+		align-items: center
+		position: relative
+
+		.area-desc
+			position: absolute
+			+flexbox
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background: rgba(0,0,0,0.5)
+			width: 28%
+			height: 190px
+			padding: 20px
+			border-radius: 10px
+			top: 12vmax
+
+			+breakpoint($desktop2)
+				top: 11vmax
+
+			+breakpoint($desktop-nor)
+				top: 9vmax
+
+			+breakpoint($desktop-med)
+				top: 7vmax
+
+			+breakpoint($desktop-med-2)
+				top: 6vmax
+
+			+breakpoint($desktop-med-3)
+				top: 4vmax
+
+			+breakpoint($tablet)
+				top: 6vmax
+
+			+breakpoint($desktop-ext)
+				width: 33%
+
+			+breakpoint($laptop)
+				width: 35%
 
 
 
 
-	i 
-		color: rgba(255,255,255,0.5)
-		font-size: 80px
-		margin-left: 1010px
-		cursor: pointer
-		+transition(.5s)
-		
-		&:hover
-			color: $branco
+			h1 
+				font-family: Raleway
+				color: $branco 
+				font-size: 28px 
+				text-align: center
+				text-transform: uppercase
 
-		&:focus
-			color: $branco
-.description
-	position: absolute
-	z-index: 108
-	background: rgba(0,0,0,0.5)
-	padding: 10px
-	+flexbox
-	flex-direction: column
-	border-radius: 12px
-	width: 480px
-	margin-top: 112px
+			h2 
+				font-family: Open Sans
+				color: $branco 
+				font-size: 21px 
+				text-align: center
 
-	h1 
-		text-transform: uppercase
-		font-family: Hero
-		color: $branco
-		font-size: 30px
-		text-align: center
+			button 
+				background: none 
+				border: 5px solid $branco
+				border-radius: 8px
+				cursor: pointer 
+				color: $branco
+				font-family: Raleway 
+				text-transform: uppercase 
+				font-size: 23px
+				+transition(.5s)
+				margin-top: 15px
 
-	h2 
-		font-family: Open Sans
-		color: $branco
-		font-size: 25px
-		text-align: center
-
-	h3 
-		font-family: Open Sans
-		color: $branco
-		font-size: 23px
-		text-align: center
-
-	button
-		background: none
-		border: 2px solid $branco
-		width: 40%
-		color: $branco
-		font-family: Hero
-		text-transform: uppercase
-		font-size: 20px 
-		border-radius: 5px
-		align-self: center
-		cursor: pointer
-		+transition(.5s)
-		outline: none
-		&:hover
-			background: $branco
-			color: $marrom
-			outline: none
-
-		&:focus
-			background: $branco
-			color: $marrom
-			outline: none
-
-.area-desc
-	+flexbox 
-	justify-content: center
+				&:hover 
+					background: $branco 
+					color: $marrom
 
 
+	img
+		width: 100% !important
+		height: auto !important 
 
