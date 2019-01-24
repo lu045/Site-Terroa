@@ -1,3 +1,23 @@
+.slider
+	height: auto
+
+	+breakpoint($smartphone-med2)
+		display: none
+
+
+
+.botprev
+	width: 30px
+	cursor: pointer
+
+.botnext
+	position: relative
+	z-index: 109
+
+	i 
+		cursor: pointer
+
+
 .controls
 	top: -150px 
 	z-index: 108
@@ -19,12 +39,16 @@
 		+flexbox
 		justify-content: flex-end
 		position: relative
-	
-
+		overflow: hidden
 
 		i 
 			font-size: 80px
-			color: $branco 
+			color: rgba(255,255,255,0.5)
+			+transition(.5s)
+
+			&:hover
+				color: $branco
+			
 
 			
 	.prev
@@ -32,17 +56,36 @@
 		justify-content: flex-start
 		position: relative
 		margin-top: -78px
+		overflow: hidden
+
 		
 
 		i 
 			font-size: 80px
-			color: $branco 
+			color: rgba(255,255,255,0.5) 
+			+transition(.5s)
+
+			&:hover
+				color: $branco
+
+			
 			
 	
 
 .owl-dots
 	top: -50px !important
 	position: relative !important
+
+	+breakpoint($tablet-maan)
+		top: -35px !important
+
+	+breakpoint($tablet-dibs)
+		top: -30px !important
+
+	+breakpoint($smartphone-deb45)
+		top: -25px !important
+
+
 
 
 
@@ -95,11 +138,72 @@
 			+breakpoint($tablet)
 				top: 6vmax
 
+			+breakpoint($tablet-msrta)
+				top: 6vmax
+
+			+breakpoint($tablet-med2)
+				top: 5vmax
+
+			+breakpoint($tablet-mor23)
+				top: 5vmax
+
+			+breakpoint($tablet-maro2)
+				top: 5vmax
+
+			+breakpoint($tablet-dbva)
+				top: 4vmax
+
+			+breakpoint($tablet-yatr15)
+				top: 3vmax
+
+			+breakpoint($smartphone-deb45)
+				top: 2vmax
+
+			+breakpoint($smartphone-pud)
+				top: 1vmax
+
 			+breakpoint($desktop-ext)
-				width: 33%
+				width: 40%
 
 			+breakpoint($laptop)
-				width: 35%
+				width: 40%
+
+			+breakpoint($tablet-mod)
+				width: 50%
+
+			+breakpoint($tablet-msrta)
+				width: 50%
+				height: 150px
+
+			+breakpoint($tablet-mor23)
+				width: 58%
+				height: 140px
+				padding: 30px
+
+			+breakpoint($tablet-maro2)
+				width: 55%
+				height: 138px
+				padding: 30px
+
+			+breakpoint($tablet-maan2)
+				width: 70%
+				height: 142px
+				padding: 30px
+
+			+breakpoint($tablet-pogg2)
+				width: 70%
+				height: 135px
+				padding: 30px
+
+			+breakpoint($tablet-dibs)
+				width: 73%
+				height: 125px
+				padding: 30px
+
+			+breakpoint($smartphone-lcva2)
+				width: 73%
+				height: 115px
+				padding: 30px
 
 
 
@@ -111,11 +215,29 @@
 				text-align: center
 				text-transform: uppercase
 
+				+breakpoint($desktop-med-5)
+					font-size: 23px
+
+				+breakpoint($tablet-pogg2)
+					font-size: 20px
+
+				+breakpoint($smartphone-lcva2)
+					font-size: 18px
+
 			h2 
 				font-family: Open Sans
 				color: $branco 
 				font-size: 21px 
 				text-align: center
+
+				+breakpoint($desktop-med-5)
+					font-size: 20px
+
+				+breakpoint($tablet-pogg2)
+					font-size: 18px
+
+				+breakpoint($smartphone-lcva2)
+					font-size: 16px
 
 			button 
 				background: none 
@@ -128,6 +250,20 @@
 				font-size: 23px
 				+transition(.5s)
 				margin-top: 15px
+
+				+breakpoint($desktop-med-5)
+					font-size: 20px
+
+				+breakpoint($tablet-pogg2)
+					font-size: 18px
+					margin-top: 10px
+
+				+breakpoint($tablet-dibs)
+					margin-top: 4px
+
+
+				+breakpoint($smartphone-lcva2)
+					font-size: 16px
 
 				&:hover 
 					background: $branco 
