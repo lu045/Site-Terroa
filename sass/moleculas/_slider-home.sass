@@ -1,6 +1,12 @@
 .slider
 	height: auto
 
+	+breakpoint($desktop2a)
+		height: auto
+
+	+breakpoint($desktop-2ab)
+		 height: 395px
+
 	+breakpoint($smartphone-pad)
 		display: none
 
@@ -48,17 +54,13 @@
 
 			&:hover
 				color: $branco
-			
-
-			
+						
 	.prev
 		+flexbox
 		justify-content: flex-start
 		position: relative
 		margin-top: -78px
 		overflow: hidden
-
-		
 
 		i 
 			font-size: 80px
@@ -69,10 +71,17 @@
 				color: $branco
 
 			
-			
-	
-
 .owl-dots
+
+	outline: none !important
+	border: none !important
+
+	&:focus
+		outline: none !important
+		border: none !important
+
+
+
 	top: -50px !important
 	position: relative !important
 
@@ -251,6 +260,7 @@
 				font-size: 23px
 				+transition(.5s)
 				margin-top: 15px
+				outline: none
 
 				+breakpoint($desktop-med-5)
 					font-size: 20px
@@ -269,6 +279,9 @@
 				&:hover 
 					background: $branco 
 					color: $marrom
+
+				&:focus
+					outline: none
 
 
 	img

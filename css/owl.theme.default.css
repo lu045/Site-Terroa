@@ -6,6 +6,21 @@
 /*
  * 	Default theme - Owl Carousel CSS File
  */
+
+.owl-dot {
+  outline: none !important;
+
+}
+
+.owl-dot:hover {
+  outline: none !important;
+
+}
+
+.owl-dot:focus{
+  outline: none !important;
+
+}
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
@@ -18,11 +33,22 @@
     background: #D6D6D6;
     display: inline-block;
     cursor: pointer;
-    border-radius: 3px; }
+    border-radius: 3px;
+    outline: none;
+     }
     .owl-theme .owl-nav [class*='owl-']:hover {
       background: #869791;
       color: #FFF;
-      text-decoration: none; }
+      text-decoration: none; 
+      outline: none;
+    }
+
+    .owl-theme .owl-nav [class*='owl-']:focus {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; 
+      outline: none;
+    }
   .owl-theme .owl-nav .disabled {
     opacity: 0.5;
     cursor: default; }
@@ -47,7 +73,12 @@
       transition: opacity 200ms ease;
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #cba876; }
+      background: #cba876;
+      outline: none; }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:focus span {
+      background: #cba876;
+      outline: none; }
 
 }
 
@@ -65,13 +96,18 @@
       margin: 5px 7px;
       background: rgba(255,255,255,0.5);
       display: block;
-      outline: none;
+      outline: none !important;
       border: none;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #cba876; }
+      background: #cba876; 
+      outline: none !important;}
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #cba876; 
+      outline: none !important;}
 
 }
 

@@ -1,76 +1,41 @@
 /*Tags utilizadas nos empreendimentos listados na pagina inicial*/
 /*Tag de Obras*/
-.home-o
-	width: 98px
-	height: 30px
-	border-radius: 5px
-	margin-top: 10px
-	margin-left: 125px
-	align-items: center
+.align-tag
+	+flexbox 
 	justify-content: center
+
+
+
+.home-o
+	height: 35px
+	padding: 12px
+	border-radius: 8px
+	+flexbox 
+	justify-content: center 
+	align-items: center
+	background: $dourado
+	z-index: 101!important
 	position: absolute
+	+transition(.5s)
+	&:hover
+		transform: scale(1.2)
 
-	/*Media Queries*/
-	+breakpoint($desktop-med)
-		margin-left: 210px
-		width: 134px
-		height: 42px
-
-	+breakpoint($tablet-dubs2)
-		margin-left: 140px
-
-	+breakpoint($smartphone-lcva2)
-		margin-left: 100px
-
-	+breakpoint($smartphone-mud2)
-		margin-left: 80px
-
-	/*Texto das Tags*/
-	h2
-		font-size: 18px
+	h2 
+		font-family: Raleway
+		font-size: 20px
+		color: $branco
+		text-transform: uppercase
+		text-align: center
+		+flexbox 
+		justify-content: center
+		position: relative
 		margin-top: 10px
 
-		/*Media Queries*/
-		+breakpoint($desktop-med)
-			font-size: 23px
+		+breakpoint($smartphone-lcva2)
+			font-size: 16px
 
 
-/*Tag de Pronto Para Morar*/
-.home-p
-	width: 186px
-	height: 35px
-	border-radius: 5px
-	margin-top: 10px
-	margin-left: 88px
-	align-items: center
-	justify-content: center
-	position: absolute
 
-	/*Media Queries*/
-	+breakpoint($desktop-med)
-		width: 212px
-		height: 41px
-		margin-left: 160px
-
-	+breakpoint($tablet-dubs2)
-		margin-left: 100px
-
-	+breakpoint($smartphone-lcva2)
-		margin-left: 60px
-
-	+breakpoint($smartphone-mud2)
-		margin-left: 40px
-
-
-	/*Texto das Tags*/
-	h2
-		font-size: 20px
-		margin-top: 8px
-
-		/*Media Queries*/
-		+breakpoint($desktop-med)
-			font-size: 23px
-
-
+		
 
 

@@ -1,15 +1,20 @@
 /*Barra de Buscas e categorias do blog e de suas respectivas areas*/
 /*Area do conteudo*/
+.catgory
+	border-radius: 12px !important
+
 .categorias-busca
 		width: 100%
+
 
 		/*Barra de buscas estilizada*/
 		.barra-busca
 			width: 100%
 			justify-content: flex-start
 			background-color: $branco			
-			border-radius: 3px
+			border-radius: 12px
 			border: 2px solid $dourado
+			+transition (.5s)
 
 			/*Efeito de Cursor*/
 			&:hover
@@ -32,6 +37,8 @@
 				font-size: 20px
 				margin-left: 5px
 				outline: none
+				border-radius: 12px  !important
+                +transition (.5s)
 				
 			/*Icone interno da barra de busca*/
 			i 
@@ -81,12 +88,14 @@
 			text-align: left
 			outline: none
 			border: 2px solid $dourado
-			border-radius: 3px
 			color: $marrom
 			appearance: none
             -webkit-appearance: none
             -moz-appearance: none
             -o-appearance: none
+            border-radius: 12px  !important
+            +transition (.5s) 
+
 			
 			/*Media Queries*/
 			+breakpoint($tablet-mod)

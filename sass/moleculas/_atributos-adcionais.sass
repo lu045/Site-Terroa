@@ -49,16 +49,281 @@
 			font-size: 30px
 
 		+breakpoint($smartphone-med5)
-			font-size: 23px
-
-		
-
-
-			
+			font-size: 23px			
 
 	img
 		margin-top: 10px
+
+
+/*Residencial Green Park*/
+
+.align-atributes
+	+flexbox  
+	justify-content: center !important
+	align-items: center !important
+
+.greenpark
+	+flexbox
+	align-items: center
+	justify-content: center
+	flex-direction: column
+
+	+breakpoint($tablet-mod)
+		display: none
+
+	
+	.circle
+		background: $verde-green
+		width: 230px
+		height: 230px 
+		border-radius: 500px
+		margin-left: 50px
+		+flexbox 
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		+transition(.5s)
+
+		+breakpoint($desktop-med)
+			margin-left: 30px
+
+		&:hover
+			background: $verde-green2
+
+		.local
+			width: 141px
+			height: 182px
+
+		.nature
+			width: 132px
+			height: 169px
+
+		.security
+			width: 159px
+			height: 185px
+
+		.party
+			width: 159px
+			height: 158px
+
+		.soccer
+			width: 184px
+			height: 182px
+
+		.gym
+			width: 192px
+			height: 108px
 		
+	h2
+		font-family: Open Sans
+		color: $marrom-green
+		text-transform: uppercase
+		font-size: 33px
+		text-align: center
+		margin-top: 10px
+
+		+breakpoint($tablet-dops)
+			font-size: 30px
+
+		+breakpoint($smartphone-med5)
+			font-size: 23px	
+
+
+
+.greenpark-responsivo
+
+	display: none
+
+	+breakpoint($tablet-mod)
+		display: block
+		width: 50%
+		+flexbox
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-left: 25%
+
+
+	.circle-res
+		background: $verde-green
+		width: 320px
+		height: 320px 
+		border-radius: 500px
+		+flexbox 
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		+transition(.5s)
+
+		+breakpoint($tablet-mor)
+			width: 250px
+			height: 250px
+
+		+breakpoint($smartphone-lcvaa25sa)
+			width: 220px
+			height: 220px
+
+		+breakpoint($smartphone-pud)
+			width: 200px
+			height: 200px
+
+		+breakpoint($smartphone-pud)
+			width: 170px
+			height: 170px
+
+		&:hover
+			background: $verde-green2
+
+		.local-resp
+			width: 191px
+			height: 202px
+
+			+breakpoint($tablet-mor)			
+				width: 161px
+				height: 210px 
+
+			+breakpoint($smartphone-lcvaa25sa)			
+				width: 131px
+				height: 180px 
+
+			+breakpoint($smartphone-pud)			
+				width: 111px
+				height: 160px
+
+			+breakpoint($smartphone-med5)			
+				width: 111px - 20
+				height: 160px - 20
+
+		.nature-resp
+			width: 172px
+			height: 209px
+
+			+breakpoint($tablet-mor)			
+				width: 142px
+				height: 179px 
+
+			+breakpoint($smartphone-lcvaa25sa)			
+				width: 112px
+				height: 149px 
+
+			+breakpoint($smartphone-pud)			
+				width: 92px
+				height: 129px
+
+			+breakpoint($smartphone-med5)			
+				width: 92px - 20
+				height: 129px - 20
+
+		.security-resp
+			width: 229px
+			height: 245px
+
+			+breakpoint($tablet-mor)			
+				width: 149px
+				height: 165px 
+
+			+breakpoint($smartphone-lcvaa25sa)			
+				width: 139px
+				height: 155px
+
+			+breakpoint($smartphone-pud)			
+				width: 129px
+				height: 145px
+
+			+breakpoint($smartphone-med5)			
+				width: 129px - 10
+				height: 145px - 10
+
+		.party-resp
+			width: 209px
+			height: 208px
+
+			+breakpoint($tablet-mor)			
+				width: 179px
+				height: 178px 
+
+			+breakpoint($smartphone-lcvaa25sa)			
+				width: 149px
+				height: 148px
+
+			+breakpoint($smartphone-pud)			
+				width: 129px
+				height: 128px
+
+			+breakpoint($smartphone-med5)			
+				width: 129px - 20
+				height: 128px - 20
+
+		.soccer-resp
+			width: 234px
+			height: 232px
+
+			+breakpoint($tablet-mor)			
+				width: 204px
+				height: 202px 
+
+			+breakpoint($smartphone-lcvaa25sa)			
+				width: 174px
+				height: 172px
+
+			+breakpoint($smartphone-pud)			
+				width: 154px
+				height: 152px
+
+
+			+breakpoint($smartphone-med5)			
+				width: 154px - 20
+				height: 152px - 20
+
+		.gym-resp
+			width: 242px
+			height: 148px
+
+			+breakpoint($tablet-mor)			
+				width: 212px
+				height: 118px 
+
+			+breakpoint($smartphone-lcvaa25sa)			
+				width: 182px
+				height: 88px
+
+			+breakpoint($smartphone-pud)			
+				width: 162px
+				height: 68px
+
+			+breakpoint($smartphone-med5)			
+				width: 162px - 20
+				height: 68px - 20
+
+	h2
+		font-family: Open Sans
+		text-transform: uppercase
+		color: $marrom-green
+		font-size: 40px
+		text-align: center
+		margin-top: 10px
+
+		+breakpoint($tablet-mod)
+			font-size: 43px
+
+		+breakpoint($tablet-mor)
+			font-size: 30px
+
+		+breakpoint($smartphone-lcvaa25sa)
+			font-size: 25px
+
+		+breakpoint($smartphone-pud)
+			font-size: 23px
+
+		+breakpoint($smartphone-med5)
+			font-size: 20px
+
+		+breakpoint($smartphone-mud)
+			font-size: 17px
+
+		
+		
+
 
 
 
