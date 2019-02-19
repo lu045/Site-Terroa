@@ -14,11 +14,53 @@
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/menu-responsivo.js"></script>	
+	<script type="text/javascript" src="js/menu-responsivo.js"></script>
+	<script type="text/javascript" src="js/menu-estatico.js"></script>	
 </head>
 
-<body>
- <header>    
+<body> 
+ <!-- Menu Estatico -->
+ <div class="static-menu">
+     <div class="container">
+         <div class="logo-estatico">
+             <a href="index.html">
+		         <img src="imagens/logo-terroa.svg" alt="Terroá Empreendimentos">
+	         </a>
+	     </div>
+
+	     <div class="menu-options">
+     	     <nav>
+		          <ul>
+			          <li><a href="sobre.html">Sobre</a></li>	
+			          <li><a href="empreendimentos.html">Empreendimentos</a></li>	
+			          <li><a href="parcerias.html">Parcerias</a></li>	
+			          <li><a href="contato.html">Contato</a></li>	
+			          <li><a href="blog.html">Blog</a></li>				
+		          </ul>
+	          </nav>
+         </div>
+
+         <button class="toggle-static">
+          	 <div class="cbar">
+          	 	 <div class="bar"></div>
+          	     <div class="barcent"></div>
+          	     <div class="bar2"></div>          		
+          	 </div>          
+         </button> 
+     </div>
+
+     <div class="menu-responsivo-static">
+     	 <ul class="staticplay">
+ 	         <li><a href="sobre.html">Sobre</a></li>	
+             <li><a href="empreendimentos.html">Empreendimentos</a></li>	
+             <li><a href="parcerias.html">Parcerias</a></li>	
+             <li><a href="contato.html">Contato</a></li>
+             <li><a href="blog.html">Blog</a></li>					
+         </ul>
+     </div>    
+  </div>
+
+ <header>      
      <div class="container">
          <!-- Logo Terroá -->
          <div class="logo">
@@ -45,8 +87,7 @@
           	 	 <div class="bar"></div>
           	     <div class="barcent"></div>
           	     <div class="bar2"></div>          		
-          	 </div>
-          
+          	 </div>          
           </button>        
      </div>
  </header>

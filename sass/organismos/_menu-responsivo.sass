@@ -12,9 +12,58 @@
 	 z-index: 110
 	 position: absolute
 	 margin-top: 151px
+	 +transition(.5s)
 
 	 +breakpoint($smartphone-med3)
 	 	margin-top: 110px
+
+
+	 /*Efeito para aplicação da função no JavaScript*/
+	 &.active
+		 display: none
+
+		 /*Media Queries*/
+		 +breakpoint($tablet2)
+		 	display: block
+
+
+
+
+
+		
+	/*Formatação de cada item em especifico do menu*/
+	li
+	 text-align: center
+	 border-bottom: 1px solid $branco
+	 cursor: pointer
+	 +transition(.5s)
+	
+	 /*Efeito de Cursor*/
+	 &:hover
+		 background-color: rgba(202,169,119,1.0) 
+	
+		/*Formatação de icones de ancoragem*/
+		a
+			font-size: 18px
+			font-family: Raleway
+			text-transform: uppercase
+			color: $branco
+
+.menu-responsivo-static
+	/*Area de listagem do menu responsivo*/
+	.staticplay
+	 width: 100%
+	 background-color: rgba(169,52,57,1.0)
+	 justify-content: center
+	 top: 2px
+	 display: none
+	 z-index: 110
+	 position: absolute
+	 margin-top: 100px
+	 margin-left: -7px
+
+	 +breakpoint($smartphone-med3)
+	 	margin-top: 100px
 
 
 	 /*Efeito para aplicação da função no JavaScript*/
@@ -30,6 +79,7 @@
 	 text-align: center
 	 border-bottom: 1px solid $branco
 	 cursor: pointer
+	 +transition(.5s)
 	
 	 /*Efeito de Cursor*/
 	 &:hover
@@ -41,7 +91,6 @@
 			font-family: Raleway
 			text-transform: uppercase
 			color: $branco
-
 
 		
 
