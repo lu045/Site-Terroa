@@ -1,94 +1,95 @@
-.perfilemp
-	background-color: $marrom
-	width: 555px
-	height: 308px
+/*Estilo dos avatares de perfis utilizado na pagina empreendimentos*/
+/*Area Geral do Perfil de Cada Empreendimento*/
+.perfil
+	background-color: $cinza-claro
+	height: 580px
+	width: 100%
 	position: relative
-	display: table
-	overflow: hidden
-	flex-wrap: wrap
+	border: solid 3px $preto
+	border-radius: 4px
+	+transition(.6s)
+	margin-top: 30px
 
+	&:hover
+
+		.foto-e
+
+			img 
+				opacity: 0.6
+				filter: alpha(opacity=60)
+
+	/*Media Queries*/
 	+breakpoint($desktop-med)
-		width: 415px
-		height: 230px
+		height: 530px
 
 	+breakpoint($tablet-mod)
-		width: 305px
-		height: 170px		
-	
-	+breakpoint($smartphone-tuc2)
-		width: 280px
-		height: 155px
+		height: 400px
 
-		
-	figure
+	+breakpoint($tablet-mor)
+		height: 580px
 
-		img
-		 max-width: 555px
-		 height: auto
-		 width: 100%
-		 position: absolute
-		 +transition(.6s)
+	+breakpoint($tablet-dubs2)
+		height: auto
+		padding-bottom: 28px
+		position: relative
 
+	/*Efeito de Cursor*/
+	&:hover
+		background-color: $cinza-escuro
 
-		 &:hover
-		 	 opacity: 0.2
-		 	 filter: alpha(opacity=60)
- 
-		 	
-		 +breakpoint($desktop-med)
-		 	max-width: 415px
-
-		figcaption
-			font-family: Raleway
-			text-transform: uppercase
-			color: $branco
-			font-size: 28px
-			justify-content: center
-			align-items: center
-			text-align: center
-			padding-top: 22%
-			+transition(.8s)
-
-			+breakpoint($tablet-mod)
-				 	dislpay: none
+	/*Imagem do Logo do Empreendimento*/
+	.foto-e
 			
-			.borda
-				 &:hover
+		img
+			border-bottom: solid 3px $preto
+			width: 100%
+			+transition(.6s)
+
+			/*Efeito de Cursor*/
+			&:hover
+			  opacity: 0.6
+		 	  filter: alpha(opacity=60)
+
+	/*Informaçoes Destacadas dos Empreendimentos*/
+	.especificacoes
+
+		margin-top: 10px
+
+		ul
+			text-align: center
+			li
+				font-family: Open Sans
+				font-size: 33px
+				color: $marrom
+				+transition(.5s)
+
+				/*Media Queries*/
+				+breakpoint($tablet-mod)
+					font-size: 23px
+
+				+breakpoint($tablet-mor)
+					font-size: 33px
+
+				+breakpoint($smartphone-deb)
+					font-size: 28px
+
+				+breakpoint($smartphone-med2)
+					font-size: 23px
 				
-				 width: 350px
-				 height: 60px
-				 border: solid 5px $branco
-				 margin-left: 95px
-				 font-size: 25px
-				 padding-top: 5px
-				 line-height: 28px
-				
+				+breakpoint($smartphone-tud3)
+					font-size: 23px
 
-				 +breakpoint($desktop-med)
-				 	width: 280px
-				 	height: 60px
-				 	font-size: 20px
-				 	border: solid 3px $branco
-				 	padding-top: 5px
-				 	margin-left: 65px
+				/*Efeito de Cursor*/
+				&:hover
+					transform: scale(1.2)
+					color: $branco
+
+					/*Media Queries*/
+					+breakpoint($desktop-med)
+						transform: scale(1.0)
+						color: $marrom
 
 
-				 +breakpoint($tablet-mod)
-				 	display: none
-				 
-
-				    
-				
-
-		
-
-
-		 
-
-
-
-
-				
 
 
 

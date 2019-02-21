@@ -1,0 +1,52 @@
+/*Botão utilizado na pagina especifica dos empreendimentos para descrever o interesse no projeto e abrir o modal com o formulario*/
+
+/*Area do Botão*/
+.botao-act
+	+flexbox
+	justify-content: center
+	margin-top: 30px
+
+	/*Estilo do Botão*/
+	button
+		background-color: transparent
+		border: 5px solid $marrom
+		border-radius: 12px !important
+		color: $marrom
+		border-radius: 5px
+		width: 347px
+		height: 92px
+		outline: none
+		cursor: pointer
+		+transition(.5s)
+
+		+breakpoint($tablet-mor)
+			width: 300px
+			height: 79px
+
+		+breakpoint($smartphone-deb)
+			width: 250px
+			height: 60px
+
+		/*Efeito de Cursor*/
+		&:hover
+			background-color: $marrom
+			color: $branco
+
+		&:focus
+			outline: none
+
+		/*Texto do Botão*/
+		h2
+			font-family: Raleway			
+			text-transform: uppercase
+			font-size: 30px
+			text-align: center
+			margin-top: 3px
+
+			+breakpoint($tablet-mor)
+				font-size: 25px
+				margin-top: 5px
+
+			+breakpoint($smartphone-deb)
+				font-size: 20px
+				margin-top: 0

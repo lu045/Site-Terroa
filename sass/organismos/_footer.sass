@@ -1,29 +1,21 @@
+/*Estilização do rodapé contido nas paginas do site*/
+/*Configuração geral de HTML*/
 html
 
-	min-height: 100%
+	min-height: auto
 	position: relative
 
-	+breakpoint($tablet-ms2)
-		position: absolute
-
-	+breakpoint($tablet-mod)
-		position: relative
-
-	+breakpoint($tablet-med2)
-		position: absolute
-	
-	+breakpoint($tablet-mor)
-		position: relative
-	
-
+/*Area do Rodapé*/
 footer
 	position: absolute
 	bottom: 0
 	width: 100%
 	background-color: $vinho
-	height: 205px
+	height: auto
+	margin-top: 200px !important
 
 
+	/*Area do Conteudo do Rodapé*/
 	.controdape
 		
 		padding: 20px 0 0
@@ -31,6 +23,7 @@ footer
 		color: $branco
 
 
+		/*Area com os Icones de Redes Sociais*/
 		.rsociais
 			
 			+flexbox
@@ -38,24 +31,20 @@ footer
 			justify-content: center
 			min-height: 60px
 
-
-
-
-
+			/*Configuraçoes especificas dos icones das redes sociais*/
 			i
 				font-size: 40px
 				color: $branco
 				margin: 0 15px 0
 				+transition(.5s)
+				cursor: pointer !important
 
+				/*Efeito de Cursor*/
 				&:hover
 				 color: $dourado
 
 
-
-		
-
-
+				/*Media Queries*/
 				+breakpoint($smartphone)
 					font-size: 35px
 					margin: 0 7px 0
@@ -65,18 +54,19 @@ footer
 					margin: 0 7px 0
 
 			
-					
-
+		/*Area com as informaçoes da empresa*/
 		.continfo
 			text-align: center
-			line-height: 25px
-			min-height: 90px
+			line-height: 10px
+			min-height: 70px
 			
 
+			/*Configuraçoes especificas de paragrafo de texto*/
 			p
 				font-size: 18px
 				font-family: Open Sans
 
+				/*Media Queries*/
 				+breakpoint($smartphone)
 					font-size: 10px
 					
@@ -85,12 +75,18 @@ footer
 					font-size: 12px
 
 
+		/*Area com o texto de dados e direitos reservados a empresa*/
+		.copyu
+			margin-top: -18px
 		.copyright
 			text-align: center
 			line-height: 25px
+
+            /*Configuraçoes especificas de paragrafo de texto*/
 			p
 				font-size: 18px
 
+				/*Media Queries*/
 				+breakpoint($smartphone-mini)
 					font-size: 10px
 

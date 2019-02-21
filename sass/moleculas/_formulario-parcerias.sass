@@ -1,48 +1,95 @@
+/*Estilo do formulario utilizado na pagina de parcerias*/
 form
 
 	+clearfix
 	+make-row
 	position: relative
+	+transition(.5s)
 
+	/*Campos do Formulario*/
 	.campos
-		margin: 10px 0 0 0
 		+flexbox
 		flex-direction: column
 		flex-wrap: wrap
 		width: 100%
+		+transition(.5s)
+
+		/*Titulo de Campo*/
+		h2
+			font-family: Raleway
+			text-transform: uppercase
+			color: $marrom
+			font-size: 25px
 	
 
+		/*Especificaçoes dos campos de input*/
 		input
-			height: 25px
+			height: 30px
+			width: 100%
+			border-radius: 10px
+			border: 2px solid $marrom
+			padding: 3px
 			+placeholder($marrom)
+			+transition(.5s)
 
+		/*Especificaçoes das areas de texto*/
 		textarea
 			height: 210px
 			width: 100%
 			resize: none
+			border-radius: 10px
+			border: 2px solid $marrom
 			+placeholder($marrom)
+			margin-top: 15px
+			+transition(.5s)
+
+			
+
+		/*Especificaçoes dos campos de select*/
+		select
+			background-color: $branco
+			border-radius: 10px
+			border: 2px solid $marrom
+			+transition(.5s)
 
 
 
+	/*Atribuiçoes do estilo interno de cada item de preenchimento*/
 	.item
 		width: 100%
 		font-family: Open Sans
 		font-size: 18px
 		color: $marrom
+		border-radius: 10px
+		+transition(.5s)
+		
 
+
+		/*Efeito de Cursor*/
 		&:hover
-			outline: solid 2px $dourado
 
+			border-radius: 10px
+			border: 2px solid $dourado
+			outline: none
+
+		/*Efeito de Clique*/
 		&:focus
-			outline: solid 2px $vinho
+			border-radius: 10px
+			border: 2px solid $vinho
+			outline: none
 
 
+	/*Atribuiçoes especificas do botão enviar*/
 	button
-		margin: 0 -6px 0 0
-
+		+transition(.5s)
+		border-radius: 12px !important
+		cursor: pointer
+		
+		/*Media Queries*/
 		+breakpoint($tablet-ms)
 			margin: 0 0 0 0
 			width: 100%
+			border-radius: 10px
 
 		
 		

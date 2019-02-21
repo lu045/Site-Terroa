@@ -1,0 +1,302 @@
+.slider
+	height: auto
+
+	+breakpoint($desktop2a)
+		height: auto
+
+	+breakpoint($desktop-2ab)
+		height: 395px
+
+	+breakpoint($desktop-nor)
+		height: 390px
+
+	+breakpoint($desktop-med)
+		height: 368px
+
+	+breakpoint($desktop-meda2b2b)
+		height: auto
+
+	+breakpoint($tablet-mod)
+		height: auto
+
+	+breakpoint($smartphone-pad)
+		display: none
+
+
+
+.botprev
+	width: 30px
+	cursor: pointer
+
+.botnext
+	position: relative
+	z-index: 109
+
+	i 
+		cursor: pointer
+
+
+.controls
+	top: -150px 
+	z-index: 108
+	position: relative
+	width: 100%
+	margin-top: -210px
+	display: none
+
+	+breakpoint($tablet)
+		margin-top: -150px
+
+	+breakpoint($laptop)
+		display: block
+
+	+breakpoint($tablet-mod)
+		display: none
+
+	.next
+		+flexbox
+		justify-content: flex-end
+		position: relative
+		overflow: hidden
+
+		i 
+			font-size: 80px
+			color: rgba(255,255,255,0.5)
+			+transition(.5s)
+
+			&:hover
+				color: $branco
+						
+	.prev
+		+flexbox
+		justify-content: flex-start
+		position: relative
+		margin-top: -78px
+		overflow: hidden
+
+		i 
+			font-size: 80px
+			color: rgba(255,255,255,0.5) 
+			+transition(.5s)
+
+			&:hover
+				color: $branco
+
+			
+.owl-dots
+
+	outline: none !important
+	border: none !important
+
+	&:focus
+		outline: none !important
+		border: none !important
+
+
+
+	top: -50px !important
+	position: relative !important
+
+	+breakpoint($tablet-maan)
+		top: -35px !important
+
+	+breakpoint($tablet-dibs)
+		top: -30px !important
+
+	+breakpoint($smartphone-deb45)
+		top: -25px !important
+
+
+
+
+
+.owl-carousel
+	overflow: hidden !important
+	position: relative !important
+	height: auto !important
+
+	+breakpoint($tablet2)
+		margin-top: 6px !important
+
+
+
+.item
+	position: relative !important
+
+	.description
+		+flexbox
+		justify-content: center
+		align-items: center
+		position: relative
+
+		.area-desc
+			position: absolute
+			+flexbox
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background: rgba(0,0,0,0.5)
+			width: 28%
+			height: 190px
+			padding: 20px
+			border-radius: 10px
+			top: 12vmax
+
+			+breakpoint($desktop2)
+				top: 11vmax
+
+			+breakpoint($desktop-nor)
+				top: 9vmax
+
+			+breakpoint($desktop-med)
+				top: 7vmax
+
+			+breakpoint($desktop-med-2)
+				top: 6vmax
+
+			+breakpoint($desktop-med-3)
+				top: 4vmax
+
+			+breakpoint($tablet)
+				top: 6vmax
+
+			+breakpoint($tablet-msrta)
+				top: 6vmax
+
+			+breakpoint($tablet-med2)
+				top: 5vmax
+
+			+breakpoint($tablet-mor23)
+				top: 5vmax
+
+			+breakpoint($tablet-maro2)
+				top: 5vmax
+
+			+breakpoint($tablet-dbva)
+				top: 4vmax
+
+			+breakpoint($tablet-yatr15)
+				top: 3vmax
+
+			+breakpoint($smartphone-deb45)
+				top: 2vmax
+
+			+breakpoint($smartphone-pud)
+				top: 1vmax
+
+			+breakpoint($desktop-ext)
+				width: 40%
+
+			+breakpoint($laptop)
+				width: 40%
+
+			+breakpoint($tablet-mod)
+				width: 50%
+
+			+breakpoint($tablet-msrta)
+				width: 50%
+				height: 150px
+
+			+breakpoint($tablet-mor23)
+				width: 58%
+				height: 140px
+				padding: 30px
+
+			+breakpoint($tablet-maro2)
+				width: 55%
+				height: 138px
+				padding: 30px
+
+			+breakpoint($tablet-maan2)
+				width: 70%
+				height: 142px
+				padding: 30px
+
+			+breakpoint($tablet-pogg2)
+				width: 70%
+				height: 135px
+				padding: 30px
+
+			+breakpoint($tablet-dibs)
+				width: 73%
+				height: 125px
+				padding: 30px
+
+			+breakpoint($smartphone-lcva2)
+				width: 73%
+				height: 115px
+				padding: 30px
+
+
+
+
+			h1 
+				font-family: Raleway
+				color: $branco 
+				font-size: 28px 
+				text-align: center
+				text-transform: uppercase
+
+				+breakpoint($desktop-med-5)
+					font-size: 23px
+
+				+breakpoint($tablet-pogg2)
+					font-size: 20px
+
+				+breakpoint($smartphone-lcva2)
+					font-size: 18px
+
+			h2 
+				font-family: Open Sans
+				color: $branco 
+				font-size: 21px 
+				text-align: center
+
+				+breakpoint($desktop-med-5)
+					font-size: 20px
+
+				+breakpoint($tablet-pogg2)
+					font-size: 18px
+
+				+breakpoint($smartphone-lcva2)
+					font-size: 16px
+
+			button 
+				background: none 
+				border: 5px solid $branco
+				border-radius: 8px
+				cursor: pointer 
+				color: $branco
+				font-family: Raleway 
+				text-transform: uppercase 
+				font-size: 23px
+				+transition(.5s)
+				margin-top: 15px
+				outline: none
+
+				+breakpoint($desktop-med-5)
+					font-size: 20px
+
+				+breakpoint($tablet-pogg2)
+					font-size: 18px
+					margin-top: 10px
+
+				+breakpoint($tablet-dibs)
+					margin-top: 4px
+
+
+				+breakpoint($smartphone-lcva2)
+					font-size: 16px
+
+				&:hover 
+					background: $branco 
+					color: $marrom
+
+				&:focus
+					outline: none
+
+
+	img
+		width: 100% !important
+		height: auto !important 
+

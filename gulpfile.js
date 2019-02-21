@@ -9,11 +9,15 @@ gulp.task('sass', function () {
     return gulp.src('sass/**/*.sass')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('css'));
+
+
 });
 
 //Task para o watch
 gulp.task('watch', function () {
     gulp.watch('sass/**/*.sass', ['sass']);
+
+
 });
 
 

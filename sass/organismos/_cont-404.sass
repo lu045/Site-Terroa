@@ -1,0 +1,156 @@
+/*Estilização da pagina de erro 404 do site*/
+/*O espaço dos conteudos relaciodos esta editado no arquivo _cont-404-rel.sass, localizado na pasta moleculas*/
+/*Area e altura da pagina*/
+.area404
+	width: 100%
+	height: 100%
+	position: relative
+	padding-bottom: 335px
+	margin-top: 65px
+
+	/*Media Queries*/
+	+breakpoint($tablet-mor)
+		padding-bottom: 230px
+		margin-top: 40px
+
+
+	/*Area do conteudo de erro 404*/
+	.error404
+		+clearfix
+
+		/*Logo padrão da Terroá Empreendimentos*/
+		.logo
+
+			width: 100%
+
+			/*Media Queries*/
+			+breakpoint($tablet-mod)
+				width: 60%
+				margin-left: 20%
+
+
+			+breakpoint($tablet-mor)
+				width: 100%
+				margin-left: 0
+
+			/*Altura e largura especificas do logo*/
+			img
+				width: 100%
+				height: auto
+
+		/*Area de cabaçalho da pagina de erro*/
+		.cabecalho-pg
+
+			margin-top: 20px
+
+			/*Titulo de Erro*/
+			h1
+				font-family: Open Sans
+				text-transform: uppercase
+				color: $marrom
+				font-size: 30px
+				text-align: center
+
+				/*Media Queries*/
+				+breakpoint($desktop-med)
+					font-size: 25px
+
+				+breakpoint($tablet-dubs2)
+					font-size: 23px
+
+		/*Area de informaçoes na pagina de erro404*/
+		.info
+
+			/*Artigo Descritivo*/
+			p 
+				font-family: Open Sans
+				color: $preto
+				font-size: 20px
+				text-align: center
+
+				/*Media Queries*/
+				+breakpoint($desktop-med)
+					font-size: 17px
+
+		/*Barra de buscas da pagina de erro*/
+		.barra-busca
+			width: 100%
+			justify-content: flex-start
+			background-color: $branco			
+			border-radius: 3px
+			border: 2px solid $dourado
+
+			/*Efeito de Cursor*/
+			&:hover
+			    border: 2px solid $vinho
+			
+			/*Efeitos de Clique*/
+			&:active
+			    border: 2px solid $vinho
+			&:focus
+			    border: 2px solid $vinho
+
+			/*Campo especifico de estilização da barra de buscas*/
+			input
+				width: 93%
+				background-color: transparent
+				border: none
+				color: $marrom
+				+placeholder($marrom)
+				font-family: Raleway
+				text-transform: uppercase
+				font-size: 20px
+				margin-left: 5px
+				outline: none
+				
+			/*Icone interno da barra de busca*/
+			i 
+				font-size: 22px
+				margin-top: 5px
+				margin-left: 18px
+				color: $marrom
+				position: absolute
+
+				/*Media Queries*/
+				+breakpoint($desktop-med)
+					margin-left: 12px
+
+				+breakpoint($tablet-mod)
+					margin-left: 15px
+
+				+breakpoint($tablet-mor)
+					margin-left: 5px
+
+				+breakpoint($tablet-dubs2)
+					margin-left: 4px
+					
+				+breakpoint($tablet-yatr)
+					margin-left: -1%
+					position: relative
+
+				+breakpoint($smartphone-wide)
+					margin-left: -1%
+					position: absolute
+
+				+breakpoint($smartphone-int)
+					margin-left: -2%
+
+				+breakpoint($smartphone-mid)
+					margin-left: -3%
+
+				+breakpoint($smartphone-tod)
+					margin-left: -4%
+
+		
+
+	    
+
+
+
+
+
+
+
+
+
+

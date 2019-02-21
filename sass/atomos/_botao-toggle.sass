@@ -10,11 +10,36 @@
 	border: 1px 
 	border-radius: 5px
 	cursor: pointer
+	+transition(.5s)
+
+	&.active
+		.cbar
+	
+			.barcent
+				display: none
+			
+			.bar
+				transform: rotate(46deg)
+				top: 8px !important 
+				position: relative
+
+		
+
+			.bar2
+				transform: rotate(135deg)
+				top: -6px !important 
+				position: relative
+
 
 
 	&:hover
 		background-color: $vinho
 
+
+	&:focus 
+		outline: none
+
+	
 
 	+breakpoint($tablet2)
 		display: block
@@ -55,6 +80,7 @@
 		 height: 6px
 		 border-radius: 2px
 		 margin-top: 8px
+		 +transition(.5s)
 
 	.barcent
 		 background-color: $branco
@@ -62,6 +88,7 @@
 		 height: 6px
 		 border-radius: 2px
 		 margin-top: 8px 
+		 +transition(.5s)
 
 	.bar2
 		 background-color: $branco
@@ -70,6 +97,101 @@
 		 border-radius: 2px
 		 margin-top: 8px
 		 display: block
+		 +transition(.5s)
+
+
+.toggle-static
+	width: 56px
+	height: 51px
+	background-color: $dourado
+	left: 90%   
+	top: -65px
+	position: relative
+	display: none
+	outline: none
+	border: 1px 
+	border-radius: 5px
+	cursor: pointer
+	+transition(.5s)
+
+	&.active
+		.cbar
+	
+			.barcent
+				display: none
+			
+			.bar
+				transform: rotate(46deg)
+				top: 8px !important 
+				position: relative
+
+		
+
+			.bar2
+				transform: rotate(135deg)
+				top: -6px !important 
+				position: relative
+
+
+	&:hover
+		background-color: $vinho
+
+	&:focus 
+		outline: none
+
+
+	+breakpoint($tablet2)
+		display: block
+
+	+breakpoint($tablet-debs)
+		left: 88%
+
+	+breakpoint($smartphone-wide22)
+		left: 87%
+
+	+breakpoint($smartphone-aut)
+		left: 86%
+
+	+breakpoint($smartphone-int)
+		left: 85%
+	
+	+breakpoint($smartphone-med3)
+		left: 84%
+
+
+
+
+	.cbar
+
+		margin-top: -10px
+
+	 .bar
+		 background-color: $branco
+		 width: 100%
+		 height: 6px
+		 border-radius: 2px
+		 margin-top: 8px
+		 +transition(.5s)
+
+	 .barcent
+		 background-color: $branco
+		 width: 100%
+		 height: 6px
+		 border-radius: 2px
+		 margin-top: 8px 
+		 +transition(.5s)
+
+	 .bar2
+		 background-color: $branco
+		 width: 100%
+		 height: 6px
+		 border-radius: 2px
+		 margin-top: 8px
+		 display: block
+		 +transition(.5s)
+
+
+
 
 
 

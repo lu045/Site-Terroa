@@ -1,3 +1,4 @@
+/*Estilo do formulario utilizado na pagina de contato*/
 form
 	+clearfix
 	+make-row
@@ -5,65 +6,79 @@ form
 	width: 100%
 
 
+	/*Campos do Formulario*/
 	.campos
-		margin: 10px 0 0 0
 		+flexbox
 		+clearfix
 		flex-direction: column
 		flex-wrap: wrap
 		width: 100%
 		position: relative
+		border-radius: 10px !important
+		border: none
 	
 	
+		/*Especificaçoes dos campos de input*/
 		input
-			height: 25px
+			height: 30px
 			width: 100%	
 			+placeholder($marrom)
 			position: relative
 			border: 100% solid $marrom
+			padding-left: 3px
 
 
+		/*Especificaçoes das areas de texto*/
 		textarea
 			height: 210px
 			width: 100%
 			resize: none
 			border: 100% solid $marrom
 			+placeholder($marrom)
+			border-radius: 10px !important
+			padding-left: 3px
 
 
+		/*Especificaçoes dos campos de select*/
 		select
 			color: $marrom
 			option: checked
-			height: 33px
-			width: 1175px
+			height: 30px
+			width: 100%
 			border: 100% solid $marrom
-
-			+breakpoint($desktop-med)
-				width: 975px
-
-			+breakpoint($tablet-mod)
-				width: 755px
-
-			+breakpoint($tablet-mor)
-				width: 100%
+			background: $branco
+			border-radius: 10px !important
+			padding-left: 3px
 
 
+	/*Atribuiçoes do estilo interno de cada item de preenchimento*/
 	.item
 		width: 100%
 		font-family: Open Sans
 		font-size: 18px
 		color: $marrom
+		border-radius: 10px !important
+		border: 2px solid $marrom
+		padding-left: 3px
+		+transition(.5s)
 
+		/*Efeito de Cursor*/
 		&:hover
-			outline: solid 2px $dourado
+			border: 2px solid $dourado
 
+		/*Efeito de Clique*/
 		&:focus
-			outline: solid 2px $vinho
+			border: 2px solid $vinho
+			outline: none
 	
 
+	/*Atribuiçoes especificas do botão enviar*/
 	button
-		margin: 0 -6px 0 0
+		border-radius: 12px !important
+		cursor: pointer
+		+transition(.5s)
 
+		/*Media Queries*/
 		+breakpoint($tablet-ms)
 			margin: 0 0 0 0
 			width: 100%

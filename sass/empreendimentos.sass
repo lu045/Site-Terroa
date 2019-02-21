@@ -1,14 +1,46 @@
-@import moleculas/mixins
+/*Arquivos da pagina empreendimentos do site, feito utilizando o conceito de design atomico*/ 
+/*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
+/*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/
 
+/*======== Mixins e Frameworks Externos ========*/
+
+/*Media queries e mixins da pagina*/
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
+
+/*Variaveis do bootstrap*/
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
 
-@import templates/empreendimentos
-@import atomos/bgpages
-@import moleculas/cont-empreendimentos
-@import moleculas/perfil-emp
-@import moleculas/tags
-
+/*Mixin do flexbox*/
 @import ../bower_components/sass-flex-mixin/flex
 
+
+/*======== Arquivos de Estilização Interna ========*/
+
+/*======== Arquivos de Mixins Utilizados ========*/
+
+/*Mixins especificos da pagina*/
+@import moleculas/mixins
+
+/*======== Moleculas ========*/
+
+/*Estrutura dos quadros com a relação dos empreendimentos listados na pagina*/
+@import moleculas/perfil-emp
+
+/*Modelo base das tags*/
+@import moleculas/tags-emp
+
+/*Tamanhos especificos e efeito de tags*/
+@import moleculas/tags-botao
+
+/*======== Organismos ========*/
+
+/*Area de conteudo da pagina*/
+@import organismos/cont-empreendimentos
+
+/*======== Templates ========*/
+
+/*Estrutura base da pagina*/
+@import templates/empreendimentos
+
+/*A junção destes arquivos constituem esta page(pagina) que forma toda a estilização site compilada no css*/

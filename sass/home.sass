@@ -1,19 +1,79 @@
-@import moleculas/mixins
+/*Arquivos de estilos da pagina inicial, feito utilizando o conceito de design atomico*/ 
+/*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
+/*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/                                                
 
-@import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
+/*======== Mixins e Frameworks Externos ========*/
+
+/*Variaveis e mixins da pagina*/
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
 
-@import templates/home
-@import moleculas/area-home
-@import moleculas/area-blog-h
-@import moleculas/formulario-home
-@import atomos/enviar
-@import atomos/bgpages
-@import atomos/botao-saiba
-@import moleculas/botoesdeenviar
-@import moleculas/tags
-@import moleculas/port-home
-@import organismos/slider-home
+/*Breakpoint*/
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
 
+/*Mixin do flexbox*/
 @import ../bower_components/sass-flex-mixin/flex
+
+
+/*======== Arquivos de Estilização Interna ========*/
+
+/*======== Arquivos de Mixins Utilizados ========*/
+
+/*Mixins especificos da pagina*/
+@import moleculas/mixins
+
+/*======== Atomos ========*/
+
+/*botao de enviar*/
+@import atomos/enviar
+/*botao de saiba mais*/
+@import atomos/botao-saiba
+/*botao de blog*/
+@import atomos/botao-blog
+/*botao de parcerias*/
+@import atomos/botao-parcerias-home
+/*textos da pagina*/
+@import atomos/text-home
+/*textos da area de parcerias*/
+@import atomos/text-parcerias-home
+
+/*======== Moleculas ========*/
+
+/*area do formulario para e-mail marketing*/
+@import moleculas/formulario-home
+
+/*area dos icones para resumo de parcerias*/
+@import moleculas/parcerias-icons
+
+//modelos do botao de enviar
+@import moleculas/botoesdeenviar
+
+/*tags de status*/
+@import moleculas/tags
+
+/*area de slide*/
+@import moleculas/slider-home
+
+/*tags com tamanhos especificos para a pagina inicial*/
+@import moleculas/tags-home
+
+/*quadros do portifolio*/
+@import moleculas/portfolio-home
+
+/*======== Organismos ========*/
+
+/*area da pagina e altura*/
+@import organismos/area-home
+
+/*area do resumo do blog*/
+@import organismos/area-blog-h
+
+/*area de e-mail marketring*/
+@import organismos/arealeeds
+
+/*======== Templates ========*/
+
+/*estrutura base da pagina*/
+@import templates/home
+
+/*A junção destes arquivos constituem esta page(pagina) que forma toda a estilização site compilada no css*/

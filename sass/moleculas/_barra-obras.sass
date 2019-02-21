@@ -1,0 +1,90 @@
+
+/*Altura das listas com as etapas das dobras*/
+ul
+	margin-top: -10px
+
+	+breakpoint($tablet-mod)
+		display: none
+		
+/*Formula que gera o dinamismo na barra de progresso*/
+@for $i from 0 through 100
+	li.statu-#{$i}
+		.barra span
+			width: 1% * $i
+	
+/*Edçoes especificas das listas de obras*/
+li
+	/*Textos de cada etapa das obras*/
+	h2
+		font-family: Open Sans
+		font-size: 25px
+		color: $preto
+		margin-top: 3px
+
+
+	
+/*Estilo da barra de progresso*/
+.barra
+	background-color: $branco
+	border: 3px solid $preto
+	border-radius: 5px
+	display: block
+	width: 100%
+	height: 32px
+	margin-top: 10px
+
+	/*Barra que fica dentro da barra de progresso simulando a porcentagem real de cada etapa*/
+	span
+		background-color: $vinho
+		border-radius: 1px
+		height: 100%
+		display: block
+
+/*Altura das listas com as etapas das dobras*/
+
+.status-responsivo
+	margin-top: -10px
+	display: none
+
+	+breakpoint($tablet-mod)
+		display: block
+		
+/*Formula que gera o dinamismo na barra de progresso*/
+@for $i from 0 through 100
+	li.statu-#{$i}
+		.barra span
+			width: 1% * $i
+	
+/*Edçoes especificas das listas de obras*/
+li
+	/*Textos de cada etapa das obras*/
+	h2
+		font-family: Open Sans
+		font-size: 25px
+		color: $preto
+		margin-top: 3px
+
+		+breakpoint($smartphone-deb)
+			font-size: 20px
+			color: $preto
+			text-align: center
+	
+/*Estilo da barra de progresso*/
+.barra
+	background-color: $branco
+	border: 3px solid $preto
+	border-radius: 5px
+	display: block
+	width: 100%
+	height: 32px
+	margin-top: 10px
+
+	/*Barra que fica dentro da barra de progresso simulando a porcentagem real de cada etapa*/
+	span
+		background-color: $vinho
+		border-radius: 1px
+		height: 100%
+		display: block
+
+
+			

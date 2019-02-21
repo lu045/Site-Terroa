@@ -1,583 +1,89 @@
-.filosofia 
-
-	width: 100%
-	height: 240px
-	+flexbox
-	flex-direction: row
-	flex-wrap: wrap
+/*Area da descrição da filosofia empresarial, utilizada na pagina sobre*/
+/*Alinhamento e posicionamento da area da pagina e icones*/
+.filosofia
+	
 	justify-content: center
 	align-items: center
-	margin-top: 15px
-	margin-left: -30px
+	text-align: center
+	flex-wrap: wrap-reverse
+	+flexbox
+	flex-direction: row
+	position: relative
+	width: 100%
 
-	+breakpoint($tablet-mod)
-		margin-left: -15px
-	
-	+breakpoint($tablet-jgtr)
-		margin-left: -5px
+	/*Medis Queries*/
+	+breakpoint($tablet-mor)
+		width: 70%
+		margin-left: 13%
 
-	+breakpoint($smartphone-med3)
+	+breakpoint($tablet-dubs2)
+		width: 100%
 		margin-left: 0
 
-	+breakpoint($tablet-mzv)
-		display: inline-block
-		flex-direction: row
-	    flex-wrap: wrap
-	    justify-content: center
-	    align-items: baseline
-
-	+breakpoint($smartphone-deb)
-		display: inline-block
-		flex-direction: row
-	    flex-wrap: wrap
-	    justify-content: center
-	    align-items: baseline
-
-	+breakpoint($smartphone-med2)
-		display: inline-block
-		flex-direction: row
-	    flex-wrap: wrap
-	    justify-content: center
-	    align-items: baseline
-	
-
-	.flipcontainer
-
-		position: relative
-		width: 230px
-		height: 230px
-		margin-left: 60px
+	/*Definição do tamanho real das imagens*/
+	.imagem
 		
-		+breakpoint($tablet-mod)
-			width: 220px
-			height: 220px
-			margin-left: 20px
+		img 
+			width: 50%
+			width: 50%
 
-		+breakpoint($tablet-mae)
-			width: 215px
-			height: 215px
-			margin-left: 20px
+	/*Alinhamento do texto 1*/
+	.text1
+		
+		margin-top: 12px
 
-		+breakpoint($tablet-mzv)
-			width: 400px
-			height: 135px
-			margin-left: 22%
-			margin-top: 15px
+		/*Titulo do Missão*/
+		h1
+			font-family: Raleway
+			font-Size: 40px
+			color: $marrom-escuro
 
-		+breakpoint($tablet-iyti)
-			width: 400px
-			height: 135px
-			margin-left: 20%
-			margin-top: 15px
+		/*Texto de Missão*/
+		p
+			font-family: Open Sans
+			font-Size: 20px
+			color: $preto
 
-		+breakpoint($tablet-jgtr)
-			width: 400px
-			height: 135px
-			margin-left: 18%
-			margin-top: 15px
 
-		+breakpoint($tablet-dlag)
-			width: 400px
-			height: 135px
-			margin-left: 17%
-			margin-top: 15px
-	
-		+breakpoint($tablet-uitr)
-			width: 400px
-			height: 135px
-			margin-left: 15%
-			margin-top: 15px
+	/*Alinhamento do texto 2*/
+	.text2
 
-		+breakpoint($tablet-lxta)
-			width: 400px
-			height: 135px
-			margin-left: 13%
-			margin-top: 15px
+		margin-top: 31px
 
-		+breakpoint($tablet-rbpu)
-			width: 400px
-			height: 135px
-			margin-left: 11%
-			margin-top: 15px
+		/*Titulo do Visão*/
+		h1
+			font-family: Raleway
+			font-Size: 40px
+			color: $marrom-escuro
 
-		+breakpoint($tablet-pqta)
-			width: 400px
-			height: 135px
-			margin-left: 10%
-			margin-top: 15px
+		/*Texto de Visão*/
+		p
+			font-family: Open Sans
+			font-Size: 20px
+			color: $preto
 
-		+breakpoint($tablet-uwer)
-			width: 400px
-			height: 135px
-			margin-left: 9%
-			margin-top: 15px
 
-		+breakpoint($tablet-yatr)
-			width: 400px
-			height: 135px
-			margin-left: 7%
-			margin-top: 15px
+	/*Alinhamento do texto 3*/
+	.text3
 
-		+breakpoint($tablet-dcca)
-			width: 400px
-			height: 135px
-			margin-left: 6%
-			margin-top: 15px
+		margin-top: 34px
 
-		+breakpoint($smartphone-wide)
-			width: 400px
-			height: 135px
-			margin-left: 5%
-			margin-top: 15px
+		/*Titulo do Valores*/
+		h1
+			font-family: Raleway
+			font-Size: 40px
+			color: $marrom-escuro
 
-		+breakpoint($smartphone-deb)
-			width: 310px
-			height: 135px
-			margin-left: 13%
-			margin-top: 15px
+		/*Texto de Valores*/
+		p
+			font-family: Open Sans
+			font-Size: 20px
+			color: $preto
 
-		+breakpoint($smartphone-aut)
-			width: 310px
-			height: 135px
-			margin-left: 10%
-			margin-top: 15px
 
-		+breakpoint($smartphone-int)
-			width: 310px
-			height: 135px
-			margin-left: 8%
-			margin-top: 15px
 
-		+breakpoint($smartphone-med3)
-			width: 235px
-			height: 180px
-			margin-left: 15%
-			margin-top: 20px
 
-		+breakpoint($smartphone-mid)
-			width: 235px
-			height: 180px
-			margin-left: 12%
-			margin-top: 20px
 
-		+breakpoint($smartphone-tuc)
-			width: 235px
-			height: 180px
-			margin-left: 10%
-			margin-top: 20px
-
-		+breakpoint($smartphone-tud)
-			width: 235px
-			height: 180px
-			margin-left: 8%
-			margin-top: 20px
-	
-		.flip
-			position: absolute
-			width: 100%
-			height: 100%
-			transform-style: preserve-3d
-			transition: all .4s linear
-	
-			&:hover
-			  transform: rotateY(180deg)
-
-			.frente
-			 position: absolute
-			 width: 100%
-			 height: 100%
-			 +flexbox
-			 justify-conten: center
-			 align-items: baseline
-			 backface-visibility: hidden
-			 background: $dourado
-
-			 .icvis
-			 	margin-left: 14%
-			 	width: 185px
-			 	height: 190px
-			 	margin-top: 3%
-
-			 	breakpoint($tablet-mod)
-			 	margin-left: 5%
-			 	margin-top: -2%
-			 	width: 70%
-
-			 	+breakpoint($tablet-mae)
-			 		margin-left: 3%
-			 		margin-top: -2%
-			 		width: 70%
-
-			 	+breakpoint($tablet-mzv)
-			 		margin-left: -3%
-			 		margin-top: -3%
-			 		width: 30%
-
-			 	+breakpoint($smartphone-med3)
-			 		margin-left: -3%
-			 		margin-top: -11%
-			 		width: 60%			
-
-			 	h1
-			 		font-size: 50px
-			 		font-family: Raleway
-			 		text-transform: none
-			 		color: #fff
-			 		line-height: 55px
-			 		margin-left: 22%
-			 		margin-top: -1%
-
-			 		+breakpoint($tablet-mod)
-			 			font-size: 45px
-			 			margin-top: -7%
-
-			 		+breakpoint($tablet-mae)
-			 			font-size: 38px
-			 			margin-left: 33%
-
-
-			 		+breakpoint($tablet-mzv)
-			 			font-size: 38px
-			 			margin-top: -90%
-			 			margin-left: 165%
-
-			 		+breakpoint($smartphone-deb)
-			 			font-size: 38px
-			 			margin-top: -115%
-			 			margin-left: 165%
-
-
-			 		+breakpoint($smartphone-med3)
-			 			font-size: 45px
-			 			margin-top: -20%
-			 			margin-left: 45%
-
-			 	img
-			 		width: 80%
-			 		height: 80%
-			 		margin-left: 18%
-			 		margin-top: 8%
-			 		
-			 		+breakpoint($tablet-mod)
-			 			margin-left: 20%
-
-			 		+breakpoint($tablet-mae)
-			 			margin-left: 22%
-
-			 		+breakpoint($smartphone-med3)
-			 			margin-left: 45%
-
-			 .icval
-			 	margin-left: 11%
-			 	width: 185px
-			 	height: 190px
-			 	margin-top: 3%
-			 	
-			 	+breakpoint($tablet-mod)
-			 		margin-left: 15%
-			 		margin-top: -2%
-			 		width: 70%
-
-			 	+breakpoint($tablet-mae)
-			 		margin-left: 9%
-			 		margin-top: -2%
-			 		width: 70%
-
-			 	+breakpoint($tablet-mzv)
-			 		margin-left: -1%
-			 		margin-top: -3%
-			 		width: 30%
-
-			 	+breakpoint($smartphone-med3)
-			 		margin-left: -3%
-			 		margin-top: -5%
-			 		width: 60%			 
-
-			 	h1
-			 		font-size: 50px
-			 		font-family: Raleway
-			 		text-transform: none
-			 		color: #fff
-			 		line-height: 55px
-
-			 		+breakpoint($tablet-mod)
-			 			font-size: 45px
-
-			 		+breakpoint($tablet-mae)
-			 			font-size: 38px
-			 			margin-left: 12%
-
-			 		+breakpoint($tablet-mzv)
-			 			font-size: 38px
-			 			margin-top: -90%
-			 			margin-left: 145%
-
-			 		+breakpoint($smartphone-deb)
-			 			font-size: 38px
-			 			margin-top: -115%
-			 			margin-left: 145%
-
-			 		+breakpoint($smartphone-med3)
-			 			font-size: 45px
-			 			margin-top: -18%
-			 			margin-left: 35%
-
-			 	img
-			 		width: 80%
-			 		height: 80%
-			 		margin-left: 8%
-
-			 		+breakpoint($tablet-mod)
-			 		  margin-left: 5%
-
-			 		+breakpoint($tablet-mae)
-			 		  margin-left: 13%
-
-			 		+breakpoint($smartphone-med3)
-			 			margin-left: 48%
-
-			 .ictit
-			 	margin-left: 12%
-			 	width: 185px
-			 	height: 190px
-			 	margin-top: 3%
-
-			 	+breakpoint($tablet-mod)
-			 		margin-left: 12%
-			 		margin-top: -2%
-			 		width: 70%
-
-			 	+breakpoint($tablet-mae)
-			 		margin-left: 11%
-			 		margin-top: -2%
-			 		width: 70%
-
-			 	+breakpoint($tablet-mzv)
-			 		margin-left: 1%
-			 		margin-top: -3%
-			 		width: 30%
-
-
-			 	+breakpoint($smartphone-med3)
-			 		margin-left: -3%
-			 		margin-top: -5%
-			 		width: 60%		 
-
-			 	h1
-			 		font-size: 50px
-			 		font-family: Raleway
-			 		text-transform: none
-			 		color: #fff
-			 		line-height: 55px
-
-			 		+breakpoint($tablet-mod)
-			 			font-size: 45px
-			 		
-			 		+breakpoint($tablet-mae)
-			 			font-size: 38px
-			 			margin-left: 11%
-
-			 		+breakpoint($tablet-mzv)
-			 			font-size: 38px
-			 			margin-top: -90%
-			 			margin-left: 140%
-
-			 		+breakpoint($smartphone-deb)
-			 			font-size: 38px
-			 			margin-top: -115%
-			 			margin-left: 140%
-
-			 		+breakpoint($smartphone-med3)
-			 			font-size: 45px
-			 			margin-top: -15%
-			 			margin-left: 35%
-
-			 	img
-			 		width: 80%
-			 		height: 80%
-			 		margin-left: 4%
-
-			 		+breakpoint($tablet-mod)
-			 			margin-left: 10%
-
-			 		+breakpoint($smartphone-med3)
-			 			margin-left: 45%
-
-			.fundo
-			 position: absolute
-			 width: 100%
-			 height: 100%
-			 backface-visibility: hidden
-			 background: $dourado-dark
-			 transform: rotateY(180deg)
-
-
-			 .icvis
-
-			 	+flexbox
-			 	flex-wrap: wrap
-			 	align-items: center
-			 	justify-content: center
-			 	flex-direction: column
-			 	margin-left: 5px
-			 	margin-top: 5px
-			 	+breakpoint($tablet-mod)
-			 		margin-top: 2px
-
-
-			 	p
-			 		color: #fff
-			 		font-size: 23px
-			 		font-family: Open Sans
-			 		text-align: left
-			 		line-height: 30px
-
-			 		+breakpoint($tablet-mod)
-			 			font-size: 20px
-
-			 		+breakpoint($tablet-mae)
-			 			font-size: 20px
-			 			line-height: 30px
-
-			 		+breakpoint($tablet-mzv)
-			 			font-size: 20px
-			 			line-height: 30px
-			 			font-family: Raleway
-
-			 		+breakpoint($smartphone-deb)
-			 			font-size: 18px
-			 			line-height: 30px
-			 			font-family: Raleway
-
-
-
-			 		+breakpoint($smartphone-med3)
-			 			font-size: 17px
-			 			line-height: 30px
-			 	
-			 	
-			 	ul
-			 		li
-			 		 color: #fff
-			 		 font-size: 25px
-			 		  font-family: Open Sans
-			 		 text-align: left
-			 		 line-height: 36px
-			 		 list-style-type: disc
-
-			 .icval
-
-			 	+flexbox
-			 	flex-wrap: wrap
-			 	align-items: center
-			 	justify-content: center
-			 	flex-direction: column
-			 	margin-left: 5px
-			 	margin-top: 5px
-
-			 	+breakpoint($tablet-mod)
-			 		margin-top: 2px
-
-			 	p
-			 		color: #fff
-			 		font-size: 23px
-			 		font-family: Open Sans
-			 		text-align: left
-			 		line-height: 30px
-
-			 		+breakpoint($tablet-mod)
-			 			font-size: 20px
-
-			 	ul
-			 		li
-			 		 color: #fff
-			 		 font-size: 30px
-			 		  font-family: Open Sans
-			 		 text-align: left
-			 		 line-height: 36px
-			 		 list-style-type: disc
-			 		 margin-left: 8%	
-			 		
-
-			 		 +breakpoint($tablet-mod)
-			 			 font-size: 20px
-
-			 		 +breakpoint($tablet-mae)
-			 			 font-size: 20px
-			 			 line-height: 34px
-
-			 		 +breakpoint($tablet-mzv)
-			 			 font-size: 20px
-			 			 line-height: 21px
-			 			 text-align: center
-			 			 list-style-type: none
-			 			 font-family: Raleway
-
-			 		 +breakpoint($smartphone-med3)
-			 			 font-size: 28px
-			 			 line-height: 30px
-			 			 text-align: center
-			 			 justigy-content: center
-			 			 list-style-type: none
-			 			 font-family: Raleway
-			 			 display: block
-			 			 margin-left: -6%	
-
-			 .icfit
-
-			 	+flexbox
-			 	flex-wrap: wrap
-			 	align-items: center
-			 	justify-content: center
-			 	flex-direction: column
-			 	margin-left: 5px
-			 	margin-top: 5px
-
-			 	+breakpoint($tablet-mod)
-			 		margin-top: 2px
-
-			 	p
-			 		color: #fff
-			 		font-size: 23px
-			 		font-family: Open Sans
-			 		text-align: left
-			 		line-height: 30px
-
-			 		+breakpoint($tablet-mod)
-			 			font-size: 20px
-
-			 		+breakpoint($tablet-mae)
-			 			font-size: 20px
-			 			line-height: 30px
-
-			 		+breakpoint($tablet-mzv)
-			 			font-size: 20px
-			 			line-height: 30px
-			 			font-family: Raleway
-
-			 		+breakpoint($smartphone-deb)
-			 			font-size: 18px
-			 			line-height: 30px
-			 			font-family: Raleway
-
-			 		+breakpoint($smartphone-med3)
-			 			font-size: 18px
-			 			line-height: 30px
-			 			font-family: Raleway			 	
-			 	
-			 	ul
-			 		li
-			 		 color: #fff
-			 		 font-size: 25px
-			 		  font-family: Open Sans
-			 		 text-align: left
-			 		 line-height: 36px
-			 		 list-style-type: disc
-
-			 		
-
-
-			 	
 
 
 

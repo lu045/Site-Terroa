@@ -1,0 +1,114 @@
+/*Barra de Buscas e categorias do blog e de suas respectivas areas*/
+/*Area do conteudo*/
+.catgory
+	border-radius: 12px !important
+
+.categorias-busca
+		width: 100%
+
+
+		/*Barra de buscas estilizada*/
+		.barra-busca
+			width: 100%
+			justify-content: flex-start
+			background-color: $branco			
+			border-radius: 12px
+			border: 2px solid $dourado
+			+transition (.5s)
+
+			/*Efeito de Cursor*/
+			&:hover
+			    border: 2px solid $vinho
+			/*Efeitos de Clique*/
+			&:active
+			    border: 2px solid $vinho
+			&:focus
+			    border: 2px solid $vinho
+
+			/*Campo especifico de estilização da barra de buscas*/
+			input
+				width: 93%
+				background-color: transparent
+				border: none
+				color: $marrom
+				+placeholder($marrom)
+				font-family: Raleway
+				text-transform: uppercase
+				font-size: 20px
+				margin-left: 5px
+				outline: none
+				border-radius: 12px  !important
+                +transition (.5s)
+				
+			/*Icone interno da barra de busca*/
+			i 
+				font-size: 22px
+				margin-top: 5px
+				margin-left: 5px
+				color: $marrom
+				position: absolute
+
+				/*Media Queries*/
+				+breakpoint($desktop-med)
+					margin-left: -1px
+
+				+breakpoint($tablet-mod)
+					margin-left: 2%
+
+				+breakpoint($tablet-mor)
+					margin-left: 1%
+
+				+breakpoint($tablet-dubs2)
+					margin-left: 4px
+					
+				+breakpoint($tablet-yatr)
+					margin-left: -1%
+					position: relative
+
+				+breakpoint($smartphone-wide)
+					margin-left: -1%
+					position: absolute
+
+				+breakpoint($smartphone-int)
+					margin-left: -2%
+
+				+breakpoint($smartphone-mid)
+					margin-left: -3%
+
+				+breakpoint($smartphone-tod)
+					margin-left: -4%			
+		
+		select
+			background-color: $branco
+			width: 100%
+			height: 100%
+			font-family: Raleway
+			font-size: 20px
+			text-transform: uppercase
+			text-align: left
+			outline: none
+			border: 2px solid $dourado
+			color: $marrom
+			appearance: none
+            -webkit-appearance: none
+            -moz-appearance: none
+            -o-appearance: none
+            border-radius: 12px  !important
+            +transition (.5s) 
+
+			
+			/*Media Queries*/
+			+breakpoint($tablet-mod)
+				margin-top: 12px
+				height: 80%
+			
+			/*Efeito de Cursor*/
+			&:hover
+				border: 2px solid $vinho
+
+			/*Efeitos de Clique*/
+			&:active
+				border: 2px solid $vinho
+
+			&:focus
+				border: 2px solid $vinho

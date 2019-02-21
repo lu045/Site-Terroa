@@ -1,0 +1,41 @@
+/*Tags utilizadas nos empreendimentos listados na pagina inicial*/
+/*Tag de Obras*/
+.align-tag
+	+flexbox 
+	justify-content: center
+
+
+
+.home-o
+	height: 35px
+	padding: 12px
+	border-radius: 8px
+	+flexbox 
+	justify-content: center 
+	align-items: center
+	background: $dourado
+	z-index: 101!important
+	position: absolute
+	+transition(.5s)
+	&:hover
+		transform: scale(1.2)
+
+	h2 
+		font-family: Raleway
+		font-size: 20px
+		color: $branco
+		text-transform: uppercase
+		text-align: center
+		+flexbox 
+		justify-content: center
+		position: relative
+		margin-top: 10px
+
+		+breakpoint($smartphone-lcva2)
+			font-size: 16px
+
+
+
+		
+
+

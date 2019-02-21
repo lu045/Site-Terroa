@@ -1,0 +1,185 @@
+/*Imagens dos empreendimentos destacados na pagina inicial*/
+.portifolio-res
+	margin-top: 3px
+	width: 100%
+	height: 400px
+	+clearfix
+	position: relative
+	height: 100%
+
+
+	/*estilo dos icones de ancora*/
+	a
+		text-decoration: none
+		position: relative
+		cursor: pointer
+		overflow: hidden
+
+	
+	/*Lista dos Empreendimentos*/
+	ul
+		
+		+flexbox
+		flex-direction: row       
+		justify-content: space-between
+		align-content: space-between
+		align-items: stretch
+		cursor: pointer
+		margin-top: 3px
+
+		/*Media Queries*/
+		+breakpoint($desktop-med)
+			flex-direction: column
+			position: relative
+			justify-content: center
+			align-items: center		
+			margin-top: -15px
+
+		/*Area Individual de Cada Empreendimento*/
+		li
+			width: 350px 
+			height: 245px 
+			+transition(.5s)
+			z-index: 100 !important
+
+
+			/*Media Queries*/
+			+breakpoint($desktop-med)
+				width: 540px
+				height: 378px
+				margin-top: 15px
+
+			+breakpoint($tablet-dubs2)
+				width: 408px
+				height: 286px
+
+			+breakpoint($smartphone-lcva2)
+				width: 336px
+				height: 235px
+
+			+breakpoint($smartphone-mud2)
+				width: 295px
+				height: 206px
+
+
+			/*Efeito de Cursor*/
+			&:hover
+				transform: scale(1.1)
+
+				/*Media Queries*/
+				+breakpoint($desktop-med)
+					transform: scale(1.0)
+
+			/*Area das Imagens de Cada Empreendimento*/
+			figure
+
+				position: relative
+				width: 100%
+				height: auto
+
+				
+
+				/*Efeito de Sobreposição de Imagens*/
+				.filtro
+					
+					background-color: rgba(0,0,0,0.3)
+					position: absolute
+					cursor: pointer
+					overflow: hidden
+					width: 100%
+					height: 245px
+					+transition(.5s)
+					border-radius: 10px 
+
+					/*Media Queries*/
+					+breakpoint($desktop-med)
+						height: 378px
+
+					+breakpoint($tablet-dubs2)
+						height: 286px
+
+					+breakpoint($smartphone-lcva2)
+						height: 235px
+
+					+breakpoint($smartphone-mud2)
+						height: 207px
+
+					&:hover
+						background-color: rgba(0,0,0,0.6)
+				
+				/*Propriedade das Imagens*/
+				img
+					width: 100%
+					height: auto
+					border-radius: 10px 
+
+				/*Descrição de Cada Empreendimento*/
+				figcaption
+
+					margin-top: -170px
+					justify-content: center
+					align-items: center
+					text-align: center
+					position: relative
+					+transition(.5s)
+
+					/*Media Queries*/
+					+breakpoint($desktop-med)
+						margin-top: -250px
+
+					+breakpoint($tablet-dubs2)
+						margin-top: -205px
+
+					+breakpoint($smartphone-lcva2)
+						margin-top: -180px
+
+					+breakpoint($smartphone-mud2)
+						margin-top: -160px
+
+				
+
+					/*Nome do Empreendimento*/
+					h2
+						font-family: Raleway
+						color: $branco
+						text-transform: uppercase
+						font-size: 20px
+						+transition(.5s)
+
+						&:hover
+							transform: scale(1.1) 
+
+							+breakpoint($tablet-mod)
+								transform: scale(1.0) 
+
+						+breakpoint($desktop-med)
+							font-size: 25px
+
+						+breakpoint($smartphone-mid)
+							font-size: 18px
+
+						+breakpoint($smartphone-lcva2)
+							font-size: 17px
+
+
+					/*Cidade do Empreendimento*/
+					p 
+						font-family: Raleway
+						color: $branco
+						font-size: 18px
+
+						+transition(.5s)
+
+						&:hover
+							transform: scale(1.1) 
+
+						+breakpoint($desktop-med)
+							font-size: 20px
+
+						+breakpoint($smartphone-lcva2)
+							font-size: 16px
+
+
+
+
+

@@ -1,0 +1,95 @@
+/*Botão utilizado nas listagens de post nas paginas de categorias e buscas*/
+/*Area do botão principal*/
+.botao-b-pc
+	+clearfix
+	+flexbox
+	float: left
+	margin-top: 5px
+
+	/*Media Queries*/
+	+breakpoint($desktop-med)
+		margin-top: -10px
+
+	/*Estilização do Botão*/
+	button
+		width: 179px
+		height: 38px
+		border: 4px solid $marrom
+		border-radius: 3px
+		cursor: pointer
+		background-color: transparent
+		color: $marrom
+		position: relative
+		outline: none
+		+transition(.5s)
+		overflow: hidden
+
+		/*Media Queries*/
+		+breakpoint($desktop-med)
+			width: 139px
+			height: 30px
+
+		/*Efeito de Cursor*/
+		&:hover
+		  background-color: $marrom
+		  color: $branco
+
+		&:focus
+			outline: none
+
+		/*Texto do Botão*/
+		h2
+			font-family: Raleway
+			text-transform: uppercase
+			font-size: 17px
+			margin-top: 4px		
+			text-align: center
+
+			/*Media Queries*/
+			+breakpoint($desktop-med)
+				font-size: 13px
+				margin-top: 2px
+
+/*Area do botão responsivo*/
+.botao-b-pc-resp
+	+clearfix
+	+flexbox
+	margin-top: 5px
+	justify-content: center
+
+
+	/*Estilização do Botão*/
+	button
+		width: 230px
+		height: 48px
+		border: 4px solid $marrom
+		border-radius: 3px
+		cursor: pointer
+		background-color: transparent
+		color: $marrom
+		position: relative
+		+transition(.5s)
+		overflow: hidden
+
+		/*Efeito de Cursor*/
+		&:hover
+		  background-color: $marrom
+		  color: $branco
+
+		/*Texto do Botão*/
+		h2
+			font-family: Raleway
+			text-transform: uppercase
+			font-size: 23px
+			margin-top: 5px		
+			text-align: center
+
+
+
+			
+				
+
+
+			
+
+

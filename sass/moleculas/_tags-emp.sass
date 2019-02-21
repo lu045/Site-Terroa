@@ -1,0 +1,136 @@
+/*Tag dos empreendimentos na home*/
+/*Estilos de base das paginas especificas de cada empreendimento*/
+.allign-tag-emp
+	+flexbox
+	justify-content: center
+
+.status-de-obra
+	border: 5px solid $verde-claro
+	padding: 10px
+	padding-top: 18px 
+	height: 70px 
+	width: none
+	border-radius: 12px
+	cursor: pointer
+	+transition(.5s)
+
+	&:hover
+		background: $verde-claro
+
+		h2 
+			color: $branco
+
+	+breakpoint($smartphone-int)
+		height: 80px
+
+	h2 
+		font-family: Raleway
+		font-size: 30px 
+		position: relative
+		text-align: center
+		text-transform: uppercase
+		color: $marrom
+		+transition(.5s)
+		margin-top: -5px
+
+		
+
+
+		+breakpoint($smartphone-wide2ab2)
+			font-size: 25px
+
+		+breakpoint($smartphone-int)
+			margin-top: -12px
+		
+
+/*Alinhamento das Tags*/
+.alltag
+	+flexbox 
+	justify-content: center
+
+/*Tag geral dos empreendimentos*/
+.tagdef
+	border: 5px solid $verde-claro
+	border-radius: 3px
+	background-color: transparent
+	border-radius: 20px
+	padding: 10px
+	height: 67px
+	background: $verde-claro !important
+	+transition(.5s)
+	position: absolute
+	+flexbox 
+	justify-content: center
+	align-items: center
+
+	+breakpoint($tablet-mod)
+		padding: 6px
+		height: 56px
+
+	+breakpoint($tablet-mor)
+		padding: 12px
+		height: 70px
+
+
+	+breakpoint($tablet-dubs2)
+		position: relative
+
+	+breakpoint($smartphone-lasa)
+		padding: 12px
+		height: 70px
+
+	+breakpoint($smartphone-tid)
+		padding: 10px
+		height: 65px
+
+	+breakpoint($smartphone-med2)
+		padding: 8px
+		height: 60px
+
+	+breakpoint($smartphone-mud2)
+		padding: 6px
+		height: 57px
+
+	/*Efeito de Cursor*/
+	&:hover
+		background-color: $verde-claro
+		color: $branco
+		transform: scale(1.2)
+
+		+breakpoint($tablet2)
+			transform: scale(1.0)
+
+	/*Texto da Tag*/
+	h2 
+		font-size: 30px
+		font-family: Raleway
+		text-transform: uppercase
+		text-align: center
+		margin-top: 12px
+		color: $branco
+
+		+breakpoint($tablet-mod)
+			font-size: 20px
+
+		+breakpoint($tablet-mor)
+			font-size: 30px
+
+		+breakpoint($smartphone-lasa)
+			font-size: 25px
+
+		+breakpoint($smartphone-tid)
+			font-size: 22px
+
+		+breakpoint($smartphone-med2)
+			font-size: 20px
+
+		+breakpoint($smartphone-mud2)
+			font-size: 18px
+
+
+
+				
+
+
+	
+	

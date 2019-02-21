@@ -1,19 +1,48 @@
-@import moleculas/mixins
+/*Arquivos da pagina contato do site, feito utilizando o conceito de design atomico*/ 
+/*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
+/*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/
 
+/*======== Mixins e Frameworks Externos ========*/
+
+/*Media queries e mixins da pagina*/
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
+
+/*Variaveis do bootstrap*/
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
 
-@import templates/contato
-@import atomos/bgpages
-@import atomos/enviar
-@import moleculas/cont-contato
-@import moleculas/formulario-contato
-@import moleculas/botoesdeenviar
-
-
-
-
-
+/*Mixin do flexbox*/
 @import ../bower_components/sass-flex-mixin/flex
 
+
+/*======== Arquivos de Estilização Interna ========*/
+
+/*======== Arquivos de Mixins Utilizados ========*/
+
+/*Mixins especificos da pagina*/
+@import moleculas/mixins
+
+/*======== Atomos ========*/
+
+/*Botao de enviar do formulario*/
+@import atomos/enviar
+
+/*======== Moleculas ========*/
+
+/*Modelo de formulario*/
+@import moleculas/formulario-contato
+
+/*Tamanho especifico do botao de enviar*/
+@import moleculas/botoesdeenviar
+
+/*======== Organismos ========*/
+
+/*Area de conteudo da pagina*/
+@import organismos/cont-contato
+
+/*======== Templates ========*/
+
+/*Estrutura base da pagina*/
+@import templates/contato
+
+/*A junção destes arquivos constituem esta page(pagina) que forma toda a estilização site compilada no css*/
