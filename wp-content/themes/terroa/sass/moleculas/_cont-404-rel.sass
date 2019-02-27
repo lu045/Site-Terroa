@@ -1,0 +1,87 @@
+/*Conteudos dos posts do blog*/
+/*Area dos itens relacionados*/
+
+
+
+
+
+.relacionados
+	margin-top: 25px
+	width: 100%
+	justify-content: center
+
+	/*Titulo de Ação*/
+	h2
+		font-size: 30px
+		font-family: Raleway
+		text-align: center
+		color: $marrom
+
+		/*Media Queries*/
+		+breakpoint($tablet-mod)
+			font-size: 25px
+
+		+breakpoint($tablet-mor)
+			font-size: 22px
+		
+		+breakpoint($tablet-dubs2)
+			font-size: 20px
+
+
+	/*Area das Listagens de Posts*/
+	.posts
+
+		+flexbox
+		justify-content: space-around
+		flex-direction: row
+		flex-wrap: wrap
+
+		/*Media Queries*/
+		+breakpoint($tablet-mor)
+			flex-direction: column
+			align-items: center
+	
+
+
+	/*Post Especifico*/
+	.fotopr-1
+
+		width: 351px
+		height: 212px
+		margin-top: 5px
+		position: relative
+	
+
+		/*Media Queries*/
+		+breakpoint($desktop-med)
+			width: 296px
+			height: 179px
+
+		+breakpoint($tablet-mod)
+			width: 218px
+			height: 132px
+
+		+breakpoint($tablet-mor)
+			width: 100%
+			height: auto	
+
+		/*Imagem do Post*/
+		img
+			width: 100%
+			height: auto
+			position: relative
+			border-radius: 20px !important
+	
+	/*Titulo do Post*/
+	h3
+		font-family: Raleway
+		font-size: 20px
+		color: $marrom
+		margin-top: 5px
+		text-align: center
+
+		/*Media Queries*/
+		+breakpoint($tablet-mor)
+			font-size: 20px
+
+	

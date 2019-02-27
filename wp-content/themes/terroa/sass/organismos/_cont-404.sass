@@ -1,0 +1,152 @@
+/*Estilização da pagina de erro 404 do site*/
+/*O espaço dos conteudos relaciodos esta editado no arquivo _cont-404-rel.sass, localizado na pasta moleculas*/
+/*Area e altura da pagina*/
+
+.botbus
+	+flexbox 
+	justify-content: flex-end
+	align-items: center 
+	position: relative
+	height: auto
+	margin-top: -28px
+
+button
+	border: none
+	background: none
+	outline: none
+	position: relative
+	+flexbox 
+	justify-content: flex-end 
+	align-items: flex-end 
+	cursor: pointer
+	+transition(.5s)
+
+	&:focus
+		border: none
+		outline: none
+
+	i 
+		font-size: 20px !important
+		color: $marrom
+		align-self: flex-end
+		height: auto 
+		position: relative 
+		+transition(.5s)
+
+
+		&:hover
+			color: $dourado
+
+.area404
+	width: 100%
+	height: 100%
+	position: relative
+	padding-bottom: 335px
+	margin-top: 65px
+
+	/*Media Queries*/
+	+breakpoint($tablet-mor)
+		padding-bottom: 230px
+		margin-top: 40px
+
+
+	/*Area do conteudo de erro 404*/
+	.error404
+		+clearfix
+
+		/*Logo padrão da Terroá Empreendimentos*/
+		.logo
+
+			width: 100%
+
+			/*Media Queries*/
+			+breakpoint($tablet-mod)
+				width: 60%
+				margin-left: 20%
+
+
+			+breakpoint($tablet-mor)
+				width: 100%
+				margin-left: 0
+
+			/*Altura e largura especificas do logo*/
+			img
+				width: 100%
+				height: auto
+
+		/*Area de cabaçalho da pagina de erro*/
+		.cabecalho-pg
+
+			margin-top: 20px
+
+			/*Titulo de Erro*/
+			h1
+				font-family: Open Sans
+				text-transform: uppercase
+				color: $marrom
+				font-size: 30px
+				text-align: center
+
+				/*Media Queries*/
+				+breakpoint($desktop-med)
+					font-size: 25px
+
+				+breakpoint($tablet-dubs2)
+					font-size: 23px
+
+		/*Area de informaçoes na pagina de erro404*/
+		.info
+
+			/*Artigo Descritivo*/
+			p 
+				font-family: Open Sans
+				color: $preto
+				font-size: 20px
+				text-align: center
+
+				/*Media Queries*/
+				+breakpoint($desktop-med)
+					font-size: 17px
+
+		/*Barra de buscas da pagina de erro*/
+		.barra-busca
+			width: 100%
+			height: 35px
+			justify-content: flex-start
+			background-color: $branco			
+			border-radius: 12px
+			border: 2px solid $dourado
+			+transition(.5s)
+
+			/*Efeito de Cursor*/
+			&:hover
+			    border: 2px solid $vinho
+			
+			/*Efeitos de Clique*/
+			&:active
+			    border: 2px solid $vinho
+			&:focus
+			    border: 2px solid $vinho
+
+			/*Campo especifico de estilização da barra de buscas*/
+			input
+				width: 93%
+				background-color: transparent
+				border: none
+				color: $marrom
+				+placeholder($marrom)
+				font-family: Raleway
+				text-transform: uppercase
+				font-size: 20px
+				margin-left: 5px
+				outline: none
+				+transition(.5s)
+				
+		
+
+
+
+
+
+
+
