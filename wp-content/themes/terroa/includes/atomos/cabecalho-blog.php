@@ -2,5 +2,6 @@
  		<div class="container">
 
 	 	 	 <section class="blog">	
-	 	 	     <!--Inicio do Conteudo-->	 
-	 	 	     <h1>Blog da Terroá</h1>
+                 <a href="http://localhost/terroaempreendimentos/blog/">
+	 	 	         <h1><?php the_title(); ?></h1>
+	 	 	     </a>

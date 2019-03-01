@@ -32,7 +32,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/slick-theme.css">	
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/menu-responsivo.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/correct-effect.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/menu-estatico.js"></script>	
 	<script src="<?php bloginfo('template_url'); ?>/js/sliderhome.js"></script>

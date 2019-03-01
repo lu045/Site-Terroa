@@ -77,8 +77,10 @@
 				width: 100%
 				height: auto
 
+				&:hover
+					.filtro
+						background: rgba(0,0,0,0.6)
 				
-
 				/*Efeito de Sobreposição de Imagens*/
 				.filtro
 					
@@ -112,6 +114,7 @@
 					width: 100%
 					height: auto
 					border-radius: 10px 
+
 
 				/*Descrição de Cada Empreendimento*/
 				figcaption
@@ -147,6 +150,9 @@
 						+transition(.5s)
 
 						&:hover
+							.filtro
+								display: none !important
+							
 							transform: scale(1.1) 
 
 							+breakpoint($tablet-mod)

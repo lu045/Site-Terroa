@@ -2,7 +2,7 @@
  		 <div class="container"> 
 	 	 	 <section class="empreendimentos">		 	    	 
 	 	 	     <!--Inicio do Conteudo-->
-	 	 	     <h1>Empreendimentos</h1>
+	 	 	     <h1><?php the_title(); ?></h1>
 	 	 	     <!--Relaçao do Portifolio dos Empreendimentos-->
 	 	 	     <div class="portifolio">
 	 	 	     	 <div class="row">

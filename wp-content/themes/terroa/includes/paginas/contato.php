@@ -4,11 +4,15 @@
 
 	 	 	 <section class="contato">		 	 	    	 
 	 	 	     <!--Inicio do Conteudo-->
-	 	 	     <h1>Contato</h1>
+	 	 	     <h1><?php the_title(); ?></h1>
 
-	 	 	     <article>
-	 	 	    	 <p>Por meio deste canal, você será atendido por nossa equipe e poderá tirar suas dúvidas e solicitar informações sobre nossos empreendimentos.</p>
-	 	 	     </article>
+	 	 	     <?php if(have_posts()): ?>
+	 	 	     	 <?php while(have_posts()): the_post(); ?>
+	 	 	             <article>
+	 	 	    	         <p><?php the_content(); ?></p>
+	 	 	             </article>
+	 	 	         <?php endwhile; ?>
+	 	 	     <?php endif; ?>
 
 	 	 	     <!-- Formulario de Contato -->
 	 	 	     <form>

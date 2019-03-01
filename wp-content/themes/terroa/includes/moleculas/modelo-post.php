@@ -32,29 +32,6 @@
    </article>
 
    <div class="tags">
-      <p>modelotagaaaasasddadada</p>
-      <p>TAG1</p>
-      <p>TAG2</p>
-      <p>TAG3</p>
-      <p>TAG4</p>
-      <p>TAG5</p>
-      <p>TAG6</p>
-      <p>TAG7</p>
-      <p>Modpa</p>
-      <p>Parrudo</p>
-      <p>Parrudoaaa</p>
-      <p>TAG5</p>
-      <p>TAG6</p>
-      <p>TAG7</p>
-      <p>Modpa</p>
-      <p>Parrudo</p>
-      <p>Parrudoaaa</p>
-      <p>TAG5</p>
-      <p>TAG6</p>
-      <p>TAG7</p>
-      <p>Modpa</p>
-      <p>Parrudo</p>
-      <p>Parrudoaaa</p>
-
+      <?php the_tags( '',''); ?>
    </div>
 

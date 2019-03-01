@@ -3,13 +3,15 @@
  		<div class="container"> 
 	 	 	 <section class="parcerias">
 	 	 	     <!--Inicio do Conteudo-->
-	 	 	     <h1>Parcerias</h1>
+	 	 	     <h1><?php the_title(); ?></h1>
 
-	 	 	     <!--Texto Descritivo-->
-	 	 	     <article>
-	 	 	 	     <p>A Terroá em seus 11 anos de atuação no mercado de incorporação imobiliária, está sempre realizando parcerias, que permitam o desenvolvimento de projetos com uma qualidade diferenciada.</p>
-	 	 	         <p>Caso tenha um terreno, ou seja, representante legal de um imóvel, e deseja uma parceria para o desenvolvimento de um projeto, por favor, preencha as informações abaixo, para a solicitação um relatório de viabilidade!</p>
-	 	 	     </article>	
+	 	 	     <?php if(have_posts()): ?>
+	 	 	     	 <?php while(have_posts()): the_post(); ?>
+	 	 	          <article>
+	 	 	 	          <p><?php the_content(); ?></p>
+	 	 	          </article>	
+	 	 	         <?php endwhile; ?>
+	 	 	     <?php endif; ?>
 
 	 	 	     <!--Formulario de Dados-->
 	 	 	     <form>

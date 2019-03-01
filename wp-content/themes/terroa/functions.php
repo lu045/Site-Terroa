@@ -12,7 +12,8 @@
 				'header-menu' =>  __('Menu Principal'),
 				'static-menu' =>  __('Menu Estatico'),
 				'responsive-menu' =>  __('Menu Responsivo'),
-				'megamenu' => __('Menu Responsivo Estatico')
+				'megamenu' => __('Menu Responsivo Estatico'),
+				'blog-menu' => __('Menu de blog'),
 			)
 		);
 		
@@ -24,10 +25,10 @@
  //Paginação//
  function custom_excerpt_length( $length ) {
  return 43;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length');
+ }
+ add_filter( 'excerpt_length', 'custom_excerpt_length');
 
-function wordpress_pagination() {
+ function wordpress_pagination() {
             global $wp_query;
             $big = 999999999;
             echo paginate_links( array(
@@ -39,5 +40,41 @@ function wordpress_pagination() {
             	  'next_text' => __('<i id="edit-icon"  class="fas fa-chevron-right"></i>'),
             ) );
       }
+ //Registro de Postype
+ 
+ function site_posts_types(){
+ 	//Destaque
+ 	register_post_type('destaque', 
+ 		array(
+ 			'labels' => array(
+ 				'name'            =>  __('Destaque'),
+ 				'singular_name'   =>  __('destaque'),
+ 			 ),
+ 		 
+ 		 'public'      =>  true,
+ 		 'has_archive' =>  true,
+ 		 'menu_icon'   => 'dashicons-images-alt2',
+ 		 'supports'    =>  array('title', 'editor', 'thumbnail', 'page-attributes'),
+ 		 
+ 		 )
+ 	);
 
+ 	//Portifolio Home
+ 	register_post_type('portifoliohome', 
+ 		array(
+ 			'labels' => array(
+ 				'name'            =>  __('Portifolio Principal'),
+ 				'singular_name'   =>  __('portifolioprincipal'),
+ 			 ),
+ 		 
+ 		 'public'      =>  true,
+ 		 'has_archive' =>  true,
+ 		 'menu_icon'   => 'dashicons-index-card',
+ 		 'supports'    =>  array('title', 'editor', 'thumbnail', 'page-attributes'),
+ 		 
+ 		 )
+ 	);
 
+ }
+
+ add_action('init', 'site_posts_types');

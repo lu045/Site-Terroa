@@ -39,7 +39,7 @@ function play(){
    
 }
 
-$('.slider').hover(function(){
+$('.owl-carousel').hover(function(){
     clearInterval(autoplay);
 }, function(){
     autoplay = setInterval(play, speed);
@@ -65,11 +65,7 @@ $('.owl-dots').click(function(){
 
 });
 
-$('.slider').mousedown(function(){
-    $('.description').hide();
-    $('.description').delay(1000);
-    $('.description').fadeIn(2000);
-})
+
 
 
 
